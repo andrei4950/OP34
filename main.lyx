@@ -1,0 +1,8359 @@
+#LyX file created by tex2lyx 2.3
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin /Users/andynic/Downloads/OP34_ The Zeeman effect/
+\textclass article
+\begin_preamble
+\usepackage[english]{babel}
+\usepackage{bm}% Required for bold math symbols
+\usepackage{comment}
+\usepackage{subcaption}
+\usepackage{siunitx}
+\usepackage{enumitem}
+
+
+\title{OP34: The Zeeman effect}
+\author{Andrei-Nicolae Taropa}
+
+
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing single
+\use_hyperref true
+\pdf_bookmarks 0
+\pdf_bookmarksnumbered 0
+\pdf_bookmarksopen 0
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks 0
+\pdf_pdfborder 0
+\pdf_colorlinks 1
+\pdf_backref section
+\pdf_pdfusetitle 0
+\pdf_quoted_options "allcolors=blue"
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+maketitle
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%-------------------------------------------------------------------
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+The Zeeman effect predicts splitting of atomic energy levels proportional to an applied magnetic field. Here we use a Fabry-Perot interferometer to measure changes caused by an external magnetic field in the fine structure of cadmium and mercury. The experiment verified the theoretical prediction by checking the effect of every quantum number on the LandÃ© g factor and consequently on the individual energy level. Additionally, the experiment investigated the type of polarised light emitted, identified the handedness of the circularly polarised light, and measured the relative intensities of the spectral lines, therefore confirming the selection rules that arise from a quantum-mechanical treatment of the phenomenon. The experimental results were in agreement with the theory and there were no higher order perturbations, unaccounted for by the Zeeman effect, observable with the resolution achieved by this setup. 
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%-------------------------------------------------------------------
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+The splitting of quantum mechanical energy levels in a weak magnetic field is best described by the Zeeman effect. Considering the semi-classical Bohr model for the atom, a simple energy level splitting 
+\begin_inset Formula $\pm \mu_B B$
+\end_inset
+
+ (the 
+\emph on
+normal
+\emph default
+ Zeeman effect) is obtained. This is caused by the energy of the interaction of the magnetic moment 
+\begin_inset Formula $\mu_B$
+\end_inset
+
+ caused by the orbital motion of the electron with the external field 
+\begin_inset Formula $B$
+\end_inset
+
+. However, this model does not include the spin magnetic moment and therefore it only correctly predicts energy level splitting when the total spin is 
+\begin_inset Formula $0$
+\end_inset
+
+. A quantum-mechanical model of an atom incorporating the spin magnetic moment 
+\begin_inset Formula $m_s$
+\end_inset
+
+ predicts an energy split of 
+\begin_inset Formula $m_s g_L \mu_B B$
+\end_inset
+
+, where 
+\begin_inset Formula $g_L$
+\end_inset
+
+ is the LandÃ© g factor. Historically this phenomenon was called the 
+\emph on
+anomalous
+\emph default
+ Zeeman effect, because the spin interaction can not be explained classically. The anomalous Zeeman effect predicts an energy dependence on the quantum numbers 
+\begin_inset Formula $j$
+\end_inset
+
+, 
+\begin_inset Formula $l$
+\end_inset
+
+, and 
+\begin_inset Formula $s$
+\end_inset
+
+, as verified in this report.
+\end_layout
+
+\begin_layout Standard
+Our experiments observed the normal Zeeman effect using the red (644 nm) transition line of a cadmium lamp. The anomalous Zeeman effect was investigated in the cadmium green (509 nm) transition line. A mercury lamp was utilised to observe the green (546 nm) and the blue (435 nm) transition lines. The lines were observed in two configurations: perpendicular to the magnetic field (both the 
+\begin_inset Formula $\pi$
+\end_inset
+
+ and 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ polarisation is visible) and along the field lines (only 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ polarisation is visible). These measurements can fully verify the dependence of the splitting on spin, orbital angular momentum and total angular momentum.
+\end_layout
+
+\begin_layout Standard
+In this paper we first discuss the theory behind the Zeeman effect (section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec: theory"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), the experimental setup (section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec: aparatus"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) and the methods used to measure the energy level splitting (section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec: measuremet"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+). Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec: results"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ presents the results we obtained and how they are in agreement with the established theory. We include a detailed discussion of the measurement uncertainties and assumptions made during the data analysis (section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec: err"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) and end with the a summary of our results and future applications (section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec: conclusion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%-------------------------------------------------------------------
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Theory and Methods
+\end_layout
+
+\begin_layout Subsection
+Energy levels and allowed transitions
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec: theory"
+
+\end_inset
+
+ We derived the theoretical value of the splitting 
+\begin_inset Formula $\Delta \nu $
+\end_inset
+
+ caused by the Zeeman effect, as a linear function of the magnetic field 
+\begin_inset Formula $B$
+\end_inset
+
+ (equation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq: splitting"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+). The full derivation is included in the Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec: theory derivation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+. 
+\begin_inset Formula \begin{equation}
+    \Delta \nu = \frac{g_{eff} \mu_B}{hc} B \label{eq: splitting}
+\end{equation}
+\end_inset
+
+The splitting is linearly dependent on the effective LandÃ© g-factor 
+\begin_inset Formula $g_{eff}$
+\end_inset
+
+ given by equation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq: g eff"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula \begin{equation}
+    g_{eff} = g_{L_2} m_{J_2} - g_{L_1} m_{J_1} \label{eq: g eff}
+\end{equation}
+\end_inset
+
+for a transition 
+\begin_inset Formula $2 \rightarrow 1$
+\end_inset
+
+. The splitting is a function of the 
+\begin_inset Formula $m_J$
+\end_inset
+
+, 
+\begin_inset Formula $j$
+\end_inset
+
+, 
+\begin_inset Formula $l$
+\end_inset
+
+, and 
+\begin_inset Formula $s$
+\end_inset
+
+ quantum numbers: 
+\begin_inset Formula \begin{equation}
+    g_L = 1 + \frac{j(j+1)-l(l+1) +s(s+1)}{j(j+1)} \label{eq: gl}
+\end{equation}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%-------------------------------------------------------------------
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Apparatus
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec: aparatus"
+
+\end_inset
+
+ To verify the aforementioned theory, we aimed to measure the splitting of the emission lines caused by the external magnetic field in the hyper-fine structure. In order to achieve this, we employed the use of a Fabry-Perot interferometer that would enable us to measure the small differences in wavenumber between the split components of the line.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Standard
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Box Frameless
+position "c"
+hor_pos "l"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "65text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Plain Layout
+ 
+\begin_inset Graphics 
+	filename setup.png
+	width 100line%
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename setup photo.jpeg
+	width 100line%
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "l"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "3text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "l"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "30text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Plain Layout
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+(a) Upper figure: Diagram of the experimental setup 
+\begin_inset Newline newline
+\end_inset
+
+ (b) Lower figure: Image of the experimental setup in the parallel observation configuration, iris not included
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:setup both"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+The experimental setup (Fig. 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: setup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) was comprised of the light source (Cd or Hg lamp), placed in between two electromagnets with iron cores. A filter selected the desired spectral line. A lens (
+\begin_inset Formula $f = 10$
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+si
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+cm
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+) created a parallel beam together with the iris that reduced the effective surface of the Fabry-Perot, potentially increasing resolution. An optical diffuser helped obtain a more uniform illumination, making measurements easier to perform. The Fabry-Perot interferometer and polariser are used to to determine the type of polarisation observed and to select between different polarisations. The waveplate helped us determine the handedness of the circularly polarised light. The phenomenon is observed using a camera with focal length of 
+\begin_inset Formula $f = 75$
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+si
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+mm
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+. The iris, diffuser, waveplate and polariser were used as required, in order to get the best image possible.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename setup.png
+	width 65line%
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+captionsetup
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+justification=centering
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagram of the experimental setup. See Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec: app setup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, Fig. 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: setup photo"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ for an image of the setup
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: setup"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The plates of the Fabry-Perot can be adjusted with two piezoelectric crystals (on the two axes). We could find the position where the plates of the interferometer are parallel by moving the observer in the left-right and up-down directions and checking if the interference pattern changes. We started with the lens such that the light bulb is in focus, but later in the experiment we also tried moving it to obtain a more diffuse image of the bulb. This helped with the visibility of the interference ring. The camera focus was set to 
+\begin_inset Formula $\infty$
+\end_inset
+
+ and the aperture was open all the way to maximise the light hitting the sensor.
+\end_layout
+
+\begin_layout Standard
+The optical path 
+\begin_inset Formula $nd = 4.42 \pm 0.17 \si{mm}$
+\end_inset
+
+ between the plates of the Fabry-Perot was measured using the pattern observed for the red line (
+\begin_inset Formula $\lambda = 644$
+\end_inset
+
+ nm) and using the formula 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq: d"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, where 
+\begin_inset Formula $r_m$
+\end_inset
+
+ is the radius of the 
+\begin_inset Formula $m^{\text{th}}$
+\end_inset
+
+ order and 
+\begin_inset Formula $f_c$
+\end_inset
+
+ is the focal distance of the camera (see section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec: d"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+). We assumed that the refractive index does not significantly change as function of wavelength over the range tested. The interferometer needed to be re-calibrated after every set of measurements in order to keep the resolution as high as possible. This was probably caused by thermal expansion caused by the heating of the piezoelectric components.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{equation}
+    nd = \lambda \frac{f_c^2}{r_m^2-r_{m-1}^2} \label{eq: d}
+\end{equation}
+\end_inset
+
+The current in the electromagnets was correlated with the magnetic field obtained. We used a Hall effect sensor to measure the magnetic field in which the light bulb will be placed. We used several readings at different currents to obtain the relation between the current in the coils and the field obtained (Fig. 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:IvsB"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+). For each current value we were able to measure a range of magnetic field values, because the field in between the two cores was not perfectly uniform. We tried to measure the value at the centre point and we estimated the error on the measurement based on how much the field changed as we moved the Hall effect probe in between the two iron cores. The fact that the field was not linear contributed to the widening of the observed lines. It was also observed that there was a residual magnetic field, because of the iron cores. This was accounted for when fitting the measurements. We were able to obtain a stronger field with the hollow iron cores (Fig. 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:IvsB hollow"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) because the cores were mounted around 
+\begin_inset Formula $30\%$
+\end_inset
+
+ closer together.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{subfigure}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+0.48
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+linewidth
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename IvsB full.png
+	width 100line%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Full iron core
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:IvsB full"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{subfigure}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space \hfill{}
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{subfigure}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+0.48
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+linewidth
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename IvsB hollow.png
+	width 100line%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Hollow iron core
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:IvsB hollow"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{subfigure}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+captionsetup
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+justification=centering
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Conversion of the applied current to magnetic field. The data was fitted with a linear fit (
+\begin_inset Formula $y = a x + b$
+\end_inset
+
+) using the method of least squares. Data points shown as central value 
+\begin_inset Formula $\pm$
+\end_inset
+
+ variation of the field in the gap between the cores. Parameters of the best-fit are: 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:IvsB full"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula $a = 0.312 \pm 0.004 $
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+si
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+T.A
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+-1
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset Formula $ b = 0.013 \pm 0.002 $
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+si
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+T
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:IvsB hollow"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula $a = 0.472 \pm 0.004 $
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+si
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+T.A
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+-1
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset Formula $ b = 0.032 \pm 0.003 $
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+si
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+T
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:IvsB"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The scale on the polariser (ranging from 0 to 360 degrees) was correlated with the direction of E-field using Brewster's angle. Vertical polarisation corresponds to 135 degrees (and horizontal at a 
+\begin_inset Formula $45^\circ$
+\end_inset
+
+ angle). We used the calibrated polariser to identify the polarisation of the lines under perpendicular observation. We identified the 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ component as the one with polarisation perpendicular to the B field and the 
+\begin_inset Formula $\pi$
+\end_inset
+
+ component as polarised longitudinally. The order (and position) of the split 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ and 
+\begin_inset Formula $\pi$
+\end_inset
+
+ components is as predicted by the Zeeman effect. Under longitudinal observation we were not able to observe 
+\begin_inset Formula $\pi$
+\end_inset
+
+ components (as predicted), and we were able to find that the 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ components have circular polarisation. The handedness of the circular polarisation was determined in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec: e/m ratio"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ by using a 
+\begin_inset Formula $543 \si{nm}$
+\end_inset
+
+ quarter-wave plate.
+\end_layout
+
+\begin_layout Subsection
+Instrumental resolution
+\end_layout
+
+\begin_layout Standard
+There are four main factors that limit the maximum wavenumber measurement resolution that can be obtained: Doppler broadening 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "item: doppler"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, Airy distribution 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "item: resolution"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, the non-uniformity of the B-field 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "item: field"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and the mirror flatness 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "item: flattness"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+. 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+[label=(
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+alph*
+\end_layout
+
+\end_inset
+
+), ref=(
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+alph*
+\end_layout
+
+\end_inset
+
+)] 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\begin_inset CommandInset label
+LatexCommand label
+name "item: doppler"
+
+\end_inset
+
+ The spectral width of a line will be dominated by Doppler broadening. By assuming a Boltzmann distribution 
+\begin_inset Formula $f(v) = \sqrt{\frac{m}{2 \pi k T}} e^{-\frac{mv^2}{2kT}}$
+\end_inset
+
+ for the particles, and by substituting the velocity 
+\begin_inset Formula $v$
+\end_inset
+
+ from the Doppler shift equation 
+\begin_inset Formula $f = f_0 (1+v/c)$
+\end_inset
+
+, we were able to recognise a Gaussian distribution with the FWHM of: 
+\begin_inset Formula \begin{equation}
+      \delta \nu_{\mathrm{Dopp}} = \sqrt{\frac{8 k T \ln{2}}{mc^2}} \nu_0
+  \end{equation}
+\end_inset
+
+where 
+\begin_inset Formula $m$
+\end_inset
+
+ is the mass of an atom, 
+\begin_inset Formula $T$
+\end_inset
+
+ is the temperature and 
+\begin_inset Formula $\nu_0$
+\end_inset
+
+ is the wavenumber of the peak of the distribution. By introducing the temperature of 
+\begin_inset Formula $T = 500 \si{K}$
+\end_inset
+
+ into the equation, which is in line with the literature 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "doi:10.1098/rspa.1936.0108"
+literal "false"
+
+\end_inset
+
+, we obtained an expected broadening in the range of: 
+\begin_inset Formula \begin{equation}
+      \delta \nu_{\text{Dopp Cd red}} = 2.4 \si{m^{-1}} \label{eq: nu doppler}
+  \end{equation}
+\end_inset
+
+
+\begin_inset Formula \begin{equation}
+      \delta \nu_{\text{Dopp Hg blue}} = 3.5 \si{m^{-1}}
+  \end{equation}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\begin_inset CommandInset label
+LatexCommand label
+name "item: resolution"
+
+\end_inset
+
+ In theory, the resolution of a Fabry-Perot interferometer is related to the finesse 
+\begin_inset Formula $F$
+\end_inset
+
+ of the instrument by equation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq: instr resolution"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+. 
+\begin_inset Formula \begin{equation} \label{eq: instr resolution}
+      \delta \nu_{\text{instr}} = \Delta \nu_{\text{FSR}} F^{-1} = \frac{1}{2d} F^{-1}
+  \end{equation}
+\end_inset
+
+where 
+\begin_inset Formula $\Delta \nu_{\text{FSR}}$
+\end_inset
+
+ is the free spectral range of the instrument. According to 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "FabryPerotEtalonGuide"
+literal "false"
+
+\end_inset
+
+ we are expecting the reflectance of the mirrors of the Fabry-Perot to be 
+\begin_inset Formula $R = 0.95$
+\end_inset
+
+. This is close enough to 
+\begin_inset Formula $1$
+\end_inset
+
+ to approximate the finesse to be given by equation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq: finesse"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+. 
+\begin_inset Formula \begin{equation}
+      F = \frac{\pi R^{\frac{1}{2}}}{1 - R} \label{eq: finesse}
+  \end{equation}
+\end_inset
+
+This results in a theoretical maximum instrumental resolution limit of: 
+\begin_inset Formula \begin{equation}
+      \delta \nu_{\text{instr}} = 1.6 \si{m^{-1}}
+  \end{equation}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\begin_inset CommandInset label
+LatexCommand label
+name "item: field"
+
+\end_inset
+
+ The magnetic field in the space between the iron cores was not perfectly uniform: edge effects make the field lines diverge and the field weaker at the centre of the gap between the cores. We were able to measure the variation of the magnetic field with the Gauss meter (Fig. 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:IvsB"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) and it is of the order of 
+\begin_inset Formula $5 \si{mT}$
+\end_inset
+
+ for the highest magnetic fields achievable with this setup. We estimated the broadening resulting from the Zeeman effect caused by a spectrum of B-fields using equation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq: splitting"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ to be at most: 
+\begin_inset Formula \begin{equation}
+      \delta \nu_{\text{B}} = 0.5 \si{m^{-1}}
+  \end{equation}
+\end_inset
+
+This value corresponds to a 
+\begin_inset Formula $g_{eff} = \pm 2$
+\end_inset
+
+ value, and because it is much smaller than the other sources of line broadening, it will not significantly contribute to the final total resolution limit of the instrument. 
+\end_layout
+
+\begin_layout Enumerate
+
+\begin_inset CommandInset label
+LatexCommand label
+name "item: flattness"
+
+\end_inset
+
+ The flatness of the mirrors is essential in obtaining a sharp image, as a deviation of just 
+\begin_inset Formula $\lambda / 2 \approx 250 \si{nm}$
+\end_inset
+
+ creates destructive interference. This is why we re-calibrated the mirror alignment after every set of measurements. Since we used a mirror surface with a dimension on the order of 
+\begin_inset Formula $1 \si{cm}$
+\end_inset
+
+, any curvature with a radius lower than 
+\begin_inset Formula $R \approx 400 \si{m}$
+\end_inset
+
+ will make measurements impossible. We were not able to estimate the flatness of the mirror, but results (section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec: resolution measurement"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) indicated this plays an important role in determining the total instrumental resolution limit (equation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq: nu tot prediction"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+). 
+\end_layout
+
+\begin_layout Standard
+The resulting total resolution limit of the instrument was estimated by adding in quadrature the individual errors, and is predicted to be at most: 
+\begin_inset Formula \begin{equation} \label{eq: nu tot prediction}
+    \delta \nu_{\text{total}} = \sqrt{\delta \nu_{\text{Dopp}}^2 + \delta \nu_{\text{instr}}^2 + \delta \nu_{\text{B}}^2} = 3.9 \si{m^{-1}}
+\end{equation}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Measurement
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec: measuremet"
+
+\end_inset
+
+ The fundamental equation that predicts the angular position of the maxima in a Fabry-Perot interferometer is: 
+\begin_inset Formula \begin{equation}
+    m = 2 \nu n d \cos{\theta} 
+    \approx 2 \nu n d (1 - \theta^2/2)
+    \approx 2 \nu n d (1 - \frac{r^2_m}{2f^2_c})
+    \label{eq: order}
+\end{equation}
+\end_inset
+
+where 
+\begin_inset Formula $m$
+\end_inset
+
+ is the interference order and 
+\begin_inset Formula $\theta  \approx r_m/f_c$
+\end_inset
+
+ is the angle. By subtracting equations 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq: order"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ for orders 
+\begin_inset Formula $m$
+\end_inset
+
+ and 
+\begin_inset Formula $m + 1$
+\end_inset
+
+ we find that: 
+\begin_inset Formula \begin{equation}
+    r^2_m - r^2_{m+1} = f^2_c/\nu n d
+\end{equation}
+\end_inset
+
+Equation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq: order"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ for a different component 
+\begin_inset Formula $\nu + \Delta \nu$
+\end_inset
+
+ is: 
+\begin_inset Formula \begin{equation}
+    m = 2 (\nu + \Delta \nu) n d (1 - \frac{r'^2_m}{2f^2_c})
+\end{equation}
+\end_inset
+
+Combining these equations we find the splitting 
+\begin_inset Formula $\Delta \nu$
+\end_inset
+
+ to be: 
+\begin_inset Formula \begin{equation}
+    \Delta \nu = - \frac{1}{2nd} \frac{r^2_m - r'^2_m}{r^2_m - r'^2_{m+1}}
+    \label{eq: nu measurement}
+\end{equation}
+\end_inset
+
+where 
+\begin_inset Formula $r_m$
+\end_inset
+
+ is the radius of the inner component, 
+\begin_inset Formula $r'_m$
+\end_inset
+
+ is the radius of the outer component for the order 
+\begin_inset Formula $m$
+\end_inset
+
+, and 
+\begin_inset Formula $nd$
+\end_inset
+
+ is the optical path 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq: d"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+. The radii of the rings in the interference pattern are measured using the Thor Labs software (Fig. 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: d measurement"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+). The software is used to control shutter and gain of the camera to obtain the desired image brightness. We used the circular measure tool to manually fit circles to the maxima in the interference pattern and the software provides the radius of the circles in number of pixels.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Note Comment
+status open
+
+\begin_layout Standard
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Box Frameless
+position "c"
+hor_pos "l"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "60text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Plain Layout
+ 
+\begin_inset Graphics 
+	filename d measurement.png
+	width 100line%
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "l"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "30text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Plain Layout
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+User interface of the program used for measurements. Image shows the Fabry-Perot interference pattern of the cadmium red line, no magnetic field applied.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: d measurement"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename d measurement.png
+	width 65line%
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+captionsetup
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+justification=centering
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+User interface of the program used for measurements. Image shows the Fabry-Perot interference pattern of the cadmium red line, no magnetic field applied.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: d measurement"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%-------------------------------------------------------------------
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Results
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec: results"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Interferometer plate separation measurement
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec: d"
+
+\end_inset
+
+ We began our experiment by measuring the distance 
+\begin_inset Formula $d$
+\end_inset
+
+ between the plates of the interferometer as described in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec: aparatus"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ obtaining: 
+\begin_inset Formula \begin{equation}
+    d = 4.42 \pm 0.17 \si{mm} \label{res: d value}
+\end{equation}
+\end_inset
+
+Despite changing the position of the plates when re-calibrating the interferometer in order to maintain the sharp image, we were not able to measure a change in the distance between the plates. This is because our error on distance 
+\begin_inset Formula $d$
+\end_inset
+
+ is on the order of 
+\begin_inset Formula $0.17 \si{mm}$
+\end_inset
+
+ and the adjustments made during re-calibration are much smaller than the error margin, on the order of the wavelength 
+\begin_inset Formula $\lambda \approx 500 \si{nm}$
+\end_inset
+
+. We conclude therefore that one should not be concerned with remeasuring the distance between the plates. It can also be safely assumed that the refractive index for air stays constant (
+\begin_inset Formula $n=1$
+\end_inset
+
+), as its dependence on temperature and wavelength is much smaller that other sources of error in the experiment 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "Polyanskiy2024"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Cadmium red transition - normal Zeeman effect
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec: Cd red"
+
+\end_inset
+
+ We first studied the 
+\begin_inset Formula $5^1 D_2\rightarrow 5^1 P_1$
+\end_inset
+
+ transition for the cadmium red line. We used Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab: quantum_numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and equation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq: g eff"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ to find the possible values for the effective g-factor to be 
+\begin_inset Formula $g_{eff} = -1, 0, 1$
+\end_inset
+
+. This means that we expected the line to split into 3 components, with the splitting given by equation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq: splitting"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+. The theoretical value of the linear line splitting 
+\begin_inset Formula $\Delta \nu $
+\end_inset
+
+ as function of magnetic field 
+\begin_inset Formula $B$
+\end_inset
+
+ for 
+\begin_inset Formula $g_{eff} = \pm 1$
+\end_inset
+
+ is: 
+\begin_inset Formula \begin{equation}
+    \text{Theoretical value: } \frac{\Delta \nu}{B} = 46.7 \, \si{m^{-1}.T^{-1}}
+\end{equation}
+\end_inset
+
+We were able to observe that, as the magnetic field strength is increased, the maxima split into 3 components: the 
+\begin_inset Formula $\pi$
+\end_inset
+
+ component (
+\begin_inset Formula $g_{eff} = 0$
+\end_inset
+
+) remained in place and the two 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ (
+\begin_inset Formula $g_{eff} = \pm 1$
+\end_inset
+
+) components moved apart on each side of the 
+\begin_inset Formula $\pi$
+\end_inset
+
+ line. The splitting was assumed to be symmetric between the (
+\begin_inset Formula $g_{eff} = \pm 1$
+\end_inset
+
+) pair, this was also visually confirmed. The magnitude of the splitting was plotted in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: Cd red"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, with the linear dependence measured using a linear fit with 
+\begin_inset Formula $0$
+\end_inset
+
+ intercept (equation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "res: Cd red"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+). 
+\begin_inset Formula \begin{equation}
+    \text{Measured value: } \frac{\Delta \nu}{B} = 46.5 \pm 3.6 \, \si{m^{-1}.T^{-1}}
+    \label{res: Cd red}
+\end{equation}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename Cd red.png
+	width 60line%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Line splitting for the 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ polarised line due to the Zeeman effect in the cadmium red transition, 
+\begin_inset Formula $5^1 D_2\rightarrow 5^1 P_1$
+\end_inset
+
+, 
+\begin_inset Formula $\lambda = 643.85\si{nm}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: Cd red"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Electron charge to mass ratio
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec: e/m ratio"
+
+\end_inset
+
+ An interesting use of the experiment performed in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec: Cd red"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is that we can employ the result 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "res: Cd red"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ to derive the charge to mass ratio of the electron. The formula for the Bohr magneton 
+\begin_inset Formula $\mu_B = e \hbar / (2 m_e)$
+\end_inset
+
+ is introduced into equation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq: splitting"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, and after using that 
+\begin_inset Formula $g_{eff} = 1$
+\end_inset
+
+ for this transition, we obtain: 
+\begin_inset Formula \begin{equation}
+    \frac{e}{m_e} = 4 \pi c \frac{\Delta \nu}{B} = (-1.75 \pm 0.14) \times 10^{11} \si{C.kg^{-1}}
+\end{equation}
+\end_inset
+
+This is in agreement with the theoretical value 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "CODATA2018"
+literal "false"
+
+\end_inset
+
+: 
+\begin_inset Formula \begin{equation}
+    \frac{e}{m_e} = -1.75882001076(53) \times 10^{11} \si{C.kg^{-1}}
+\end{equation}
+\end_inset
+
+Interestingly, it is also possible to determine the sign of the electron charge. We used a beetle as reference for left hand polarised light. The beetle reflects bright green left-hand polarised light. Therefore we determined that the outer ring in the interference pattern were LH polarised and the inner ones were RH polarised. These measurements were done with a longitudinal setup, parallel to the magnetic field. We used a compass to determine that the B-field vector was in the direction of the photon momentum. Outer ring is higher energy (
+\begin_inset Formula $\Delta \nu > 0$
+\end_inset
+
+), and 
+\begin_inset Formula $ \Delta m_J = 1$
+\end_inset
+
+ corresponds to RH polarisation. By substitution into equation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq: splitting"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, this result confirms that electrons have negative charge.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement h!
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{subfigure}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+0.47
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+linewidth
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename Cd green/A.png
+	width 100line%
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{subfigure}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{subfigure}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+0.47
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+linewidth
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename Cd green/B.png
+	width 100line%
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{subfigure}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{subfigure}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+0.47
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+linewidth
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename Cd green/C.png
+	width 100line%
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{subfigure}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{subfigure}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+0.47
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+linewidth
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename Cd green/D.png
+	width 100line%
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{subfigure}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+captionsetup
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+justification=centering
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fabry-Perot interferometer images of the cadmium green line observed along the field lines. Only the 6 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ polarised lines are visible under longitudinal observation. Magnetic field is increased from 
+\begin_inset Formula $0.03 \si{T}$
+\end_inset
+
+ in Fig. A, to 
+\begin_inset Formula $0.46 \si{T}$
+\end_inset
+
+ in Fig. B, to 
+\begin_inset Formula $0.54 \si{T}$
+\end_inset
+
+ in Fig. C, and up to 
+\begin_inset Formula $0.62 \si{T}$
+\end_inset
+
+ in Fig. D. The lines are not resolved for field lower that in Fig B, and the different orders start overlapping for fields higher than in Fig D. The labels 3, 2, 1, 1', 2', 3' correspond to the 
+\begin_inset Formula $g_{eff} = -2, -1.5, -1, 1, 1.5, 2$
+\end_inset
+
+ values respectively (see Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab: Cd green g_eff"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+). The rings labelled with the primed number are referred to as outer rings and the non-primed are inner rings.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "img: Cd_green_sigma_increasing_field"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Cadmium green transition - anomalous Zeeman effect
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec: Cd green"
+
+\end_inset
+
+ The 
+\begin_inset Formula $5^3 S_1\rightarrow 5^3 P_2$
+\end_inset
+
+ transition, for the cadmium green line, exhibits the anomalous Zeeman effect: the spin of the electrons couple together and the interaction involves both the orbit and angular momentum and the spin angular momentum. The anomalous Zeeman effect splits the spectral line in more than three components that are not necessarily equally spaced apart. The effective g-factor values, derived using Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab: quantum_numbers"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and equation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq: g eff"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ are shown in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab: Cd green g_eff"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ together with their polarisation. Having 9 different possible values for 
+\begin_inset Formula $g_{eff}$
+\end_inset
+
+ means that we expect the line to split into 9 components, with the splitting given by equation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq: splitting"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float table
+placement h!
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Tabular 
+<lyxtabular version="3" rows="10" columns="6">
+<features rotate="0" booktabs="true" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Observation 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Polarisation 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula \( g_{eff} \)
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+No. of independent 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Measured splitting 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Theoretical splitting 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+configuration 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+measurements 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $\Delta \nu / B$
+\end_inset
+
+ (
+\begin_inset Formula $\si{m^{-1}.T^{-1}}$
+\end_inset
+
+) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $\Delta \nu / B$
+\end_inset
+
+ (
+\begin_inset Formula $\si{m^{-1}.T^{-1}}$
+\end_inset
+
+) 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+perpendicular 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula \( \pi \)
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+- 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+no splitting 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+perpendicular 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula \( \pi \)
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $\pm 0.5$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+12 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $22.4 \pm 1.0$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+23.4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+perpendicular 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula \( \sigma \)
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $\pm 1$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+8 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $44.7 \pm 2.1$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+46.7
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+perpendicular 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula \( \sigma \)
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $\pm 1.5$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+8 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $63.8 \pm 2.9$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+70
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+perpendicular 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula \( \sigma \)
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $\pm 2$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+8 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $85.1 \pm 3.9$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+93.4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+parallel 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula \( \sigma \)
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $\pm 1$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+9 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $43.4 \pm 2.0$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+46.7
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+parallel 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula \( \sigma \)
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $\pm 1.5$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+9 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $69.2 \pm 3.3$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+70
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+parallel 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula \( \sigma \)
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $\pm 2$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+7 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $89.8 \pm 4.1$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+93.4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+captionsetup
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+justification=centering
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Measured line splitting wavenumber 
+\begin_inset Formula $\Delta \nu$
+\end_inset
+
+ dependence on magnetic field 
+\begin_inset Formula $B$
+\end_inset
+
+ and 
+\begin_inset Formula $g_{eff}$
+\end_inset
+
+ factor in the cadmium green 
+\begin_inset Formula $5^3 S_1\rightarrow 5^3 P_2$
+\end_inset
+
+ transition. The calculated values of 
+\begin_inset Formula \(g_{eff}\)
+\end_inset
+
+ are shown with the corresponding polarisation according to the Zeeman effect predictions
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab: Cd green g_eff"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This is indeed what we observed: when the magnetic field is applied, the line splits into 9 components. A polariser (or longitudinal observation) is used to select only the 
+\begin_inset Formula $\pi$
+\end_inset
+
+ or 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ polarisations in order to more easily perform the measurements (see Fig. 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "img: Cd_green_sigma_increasing_field"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ with only 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ polarisations). Our experiment verifies that the measured line splitting is the same in both longitudinal and perpendicular configurations.
+\end_layout
+
+\begin_layout Subsection
+Mercury green transition
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec: Hg green"
+
+\end_inset
+
+ The splitting of the mercury green line (Fig. 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: Hg green sigma"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: Hg green pi"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab: Hg green results"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, transition 
+\begin_inset Formula $7^3 S_1 \rightarrow 6^3P_2$
+\end_inset
+
+) is the same as in the cadmium green (transition 
+\begin_inset Formula $5^3 S_1 \rightarrow 5^3P_2$
+\end_inset
+
+), within error, and in agreement with the theory. This confirms that the line splitting has no measurable dependence on the principal quantum number 
+\begin_inset Formula $n$
+\end_inset
+
+ or on other atomic properties of the material such as electron number 
+\begin_inset Formula $Z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float table
+placement h!
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Tabular 
+<lyxtabular version="3" rows="7" columns="6">
+<features rotate="0" booktabs="true" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Observation 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Polarisation 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula \( g_{eff} \)
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+No. of independent 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Measured splitting 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Theoretical splitting 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+configuration 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+measurements 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $\Delta \nu / B$
+\end_inset
+
+ (
+\begin_inset Formula $\si{m^{-1}.T^{-1}}$
+\end_inset
+
+) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $\Delta \nu / B$
+\end_inset
+
+ (
+\begin_inset Formula $\si{m^{-1}.T^{-1}}$
+\end_inset
+
+) 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+perpendicular 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula \( \pi \)
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+- 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+no splitting 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+perpendicular 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula \( \pi \)
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $\pm 0.5$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+12 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $23.8 \pm 1.4$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+23.4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+parallel 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula \( \sigma \)
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $\pm 1$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+7 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $46.1 \pm 2.0$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+46.7
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+parallel 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula \( \sigma \)
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $\pm 1.5$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+4 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $70.9 \pm 3.0$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+70
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+parallel 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula \( \sigma \)
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $\pm 2$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+4 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $91.5 \pm 4.1$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+93.4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+captionsetup
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+justification=centering
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Measured line splitting wavenumber 
+\begin_inset Formula $\Delta \nu$
+\end_inset
+
+ dependence on magnetic field 
+\begin_inset Formula $B$
+\end_inset
+
+ and 
+\begin_inset Formula $g_{eff}$
+\end_inset
+
+ factor in the mercury green 
+\begin_inset Formula $7^3 S_1\rightarrow 6^3 P_2$
+\end_inset
+
+ transition. The calculated values of 
+\begin_inset Formula \(g_{eff}\)
+\end_inset
+
+ are shown with the corresponding polarisation according to the Zeeman effect predictions
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab: Hg green results"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Mercury blue transition
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec: Hg blue"
+
+\end_inset
+
+ The 
+\begin_inset Formula $7^3 S_1 \rightarrow 6^3 P_1$
+\end_inset
+
+ transition is important because it proves the special case of the selection rule that predicts that for 
+\begin_inset Formula $\Delta J = 0$
+\end_inset
+
+ there can be no transition where the quantum number 
+\begin_inset Formula $m_j$
+\end_inset
+
+ changes from 0 to 0. Therefore the observed interference pattern does not have the central 
+\begin_inset Formula $\pi$
+\end_inset
+
+ component corresponding to 
+\begin_inset Formula $g_{eff} = 0$
+\end_inset
+
+. When we used a polariser to select only 
+\begin_inset Formula $\pi$
+\end_inset
+
+ polarised light, we observed only two components (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "img: Hg blue pi perp"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+For the mercury blue transition there are 6 possible values for the 
+\begin_inset Formula $g_{eff}$
+\end_inset
+
+ coefficient (from equation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq: splitting"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) as presented in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab: Hg blue results"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+. The absence of the central 
+\begin_inset Formula $\pi$
+\end_inset
+
+ component made possible measurements of the splitting of as low as 
+\begin_inset Formula $\Delta \nu = 8.7 \pm 0.3 \si{m^{-1}}$
+\end_inset
+
+ at magnetic fields of 
+\begin_inset Formula $B = 0.309 \pm 0.004 \si{T}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float table
+placement h!
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Tabular 
+<lyxtabular version="3" rows="5" columns="6">
+<features rotate="0" booktabs="true" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Observation 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Polarisation 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula \( g_{eff} \)
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+No. of independent 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Measured splitting 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Theoretical splitting 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+configuration 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+measurements 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $\Delta \nu / B$
+\end_inset
+
+ (
+\begin_inset Formula $\si{m^{-1}.T^{-1}}$
+\end_inset
+
+) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $\Delta \nu / B$
+\end_inset
+
+ (
+\begin_inset Formula $\si{m^{-1}.T^{-1}}$
+\end_inset
+
+) 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+perpendicular 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula \( \pi \)
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $\pm 0.5$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+16 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $25.6 \pm 1.1 $
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+23.4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+parallel 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula \( \sigma \)
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $\pm 1.5$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $74 \pm 16 $
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+70
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+parallel 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula \( \sigma \)
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $\pm 2$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $90 \pm 16 $
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+93.4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+captionsetup
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+justification=centering
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Measured line splitting wavenumber 
+\begin_inset Formula $\Delta \nu$
+\end_inset
+
+ dependence on magnetic field 
+\begin_inset Formula $B$
+\end_inset
+
+ and 
+\begin_inset Formula $g_{eff}$
+\end_inset
+
+ factor in the mercury blue 
+\begin_inset Formula $7^3 S_1\rightarrow 6^3 P_2$
+\end_inset
+
+ transition. The calculated values of 
+\begin_inset Formula \(g_{eff}\)
+\end_inset
+
+ are shown with the corresponding polarisation according to the Zeeman effect predictions
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab: Hg blue results"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The measurements of the 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ polarised components was highly limited by the resolution and free spectral range of the instrument used. The two 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ pairs are located close together, at 
+\begin_inset Formula $|g_{eff}| = 1.5$
+\end_inset
+
+ and 
+\begin_inset Formula $|g_{eff}| = 2$
+\end_inset
+
+, making them unresolved for 
+\begin_inset Formula $B < 0.5 \si{T}$
+\end_inset
+
+. For 
+\begin_inset Formula $B > 0.5 \si{T}$
+\end_inset
+
+ the lines start overlapping with the next order, making measurements only possible at 
+\begin_inset Formula $B = 0.5 \si{T}$
+\end_inset
+
+. The values obtained are in agreement with the theory (Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab: Hg blue sigma measurements"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), considering that one can use the FWHM 
+\begin_inset Formula $\delta \nu_{FWHM} = 8 \si{m^{-1}}$
+\end_inset
+
+ of the lines as an estimation of the order of magnitude of the error.
+\end_layout
+
+\begin_layout Subsection
+Interferometer resolution measurement
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec: resolution measurement"
+
+\end_inset
+
+ We directly measured the resolution of the Fabry-Perot setup by looking at the line profile of the interference image (See Fig. 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "img: Hg line profile"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and Fig. 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "img: He-Ne line profile"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ in Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec: Line profiles"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+). We define the resolution limit as the FWHM of the observed line measured in units of 
+\begin_inset Formula $\si{m^{-1}}$
+\end_inset
+
+. We first measured the resolution limit of the instrument using the Hg lamp finding: 
+\begin_inset Formula \begin{equation}
+    \delta \nu_{\text{Hg}} = 20.8 \pm 0.7 \si{m^{-1}}
+\end{equation}
+\end_inset
+
+When investigating the cadmium green line (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "img: Cd_green_sigma_increasing_field"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+A) we achieved a better resolution of 
+\begin_inset Formula $\delta \nu_{\text{Cd}} = 10 \pm 2 \si{m^{-1}}$
+\end_inset
+
+. This highlights how the setup is highly dependent on a good calibration. However, both of these values are a lot higher than the theoretically predicted resolution limit (equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq: nu tot prediction"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+). Equation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq: nu tot prediction"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq: splitting"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ predicted that we should be been able to measure splittings for with 
+\begin_inset Formula $g_{eff} = \pm 1$
+\end_inset
+
+ at as low a field as 
+\begin_inset Formula $B = 0.08 \si{T}$
+\end_inset
+
+. In practice we were only able to measure splittings for a minimum field of 
+\begin_inset Formula $B = 0.26 \si{T}$
+\end_inset
+
+ for the cadmium red line (fig. 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: Cd red"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+We also attempted to measure the inherent instrumental resolution by making use of a He-Ne laser, which does not have Doppler broadening. The laser light line width was measured using a Czerny-Turner monochromator and determined to be 
+\begin_inset Formula $\lambda_{\text{He-Ne}} = 633.1 \pm 0.4 \si{nm}$
+\end_inset
+
+. We measured the FWHM of the peaks in the line profile (Fig. 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "img: He-Ne line profile"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) of the Fabry-Perot interference image (Fig. 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "img: He-Ne image"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) and obtained a resolution limit of: 
+\begin_inset Formula \begin{equation}
+    \delta \nu_{\text{He-Ne no iris}} = 7.9 \pm 1 \si{m^{-1}}
+\end{equation}
+\end_inset
+
+without using an iris and with an iris: 
+\begin_inset Formula \begin{equation}
+    \delta \nu_{\text{He-Ne with iris}} = 5.2 \pm 1 \si{m^{-1}}
+\end{equation}
+\end_inset
+
+This suggests that the flatness 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "item: flattness"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ of the mirror accounts for most of the error in our measurement. The low instrumental resolution will be dominant over the Doppler broadening (equation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq: nu doppler"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Section
+Error analysis
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec: err"
+
+\end_inset
+
+ The leading source of error on the splitting measurements was the 
+\begin_inset Formula $3.8\%$
+\end_inset
+
+ error on the measurement of the distance 
+\begin_inset Formula $d$
+\end_inset
+
+ between the plates. Another significant source of error was random error from the interference maxima radius measurement. We calculated this as standard deviation of the individual measurements. There was also a 
+\begin_inset Formula $1\%$
+\end_inset
+
+ error on the correlation between field strength and current. As we only directly measured current, this error affected all splitting measurements. These errors were be considered independent and the final result is linearly dependent on these parameters, therefore we combine the percentage errors by adding them in quadrature.
+\end_layout
+
+\begin_layout Standard
+Numerical errors were considered, but they turn out to be insignificant: In equation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq: order"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ it was assumed that 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is small 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq: small theta"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, and 
+\begin_inset Formula $\theta^3$
+\end_inset
+
+ order and higher terms were neglected (
+\begin_inset Formula $\theta^3 \approx 10^{-4}$
+\end_inset
+
+). 
+\begin_inset Formula \begin{equation}
+    \theta \approx \frac{\mathrm{\#\ of\ pixels} \times \mathrm{pixel\ width}}{\mathrm{focal\ distance}} \approx \frac{700 \times 5.86 \si{\mu m}}{75 \si{mm}}
+    \approx 0.05 \ll 1
+    \label{eq: small theta}
+\end{equation}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conclusions
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec: conclusion"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Aims and results
+\end_layout
+
+\begin_layout Standard
+This experimental investigation aimed to validate theoretical predictions regarding the Zeeman effect through the observation of spectral line splittings in transitions of cadmium and mercury. Each of the following transitions verify a property of the phenomenon: 
+\end_layout
+
+\begin_layout Itemize
+
+\begin_inset Formula $5^1 D_2 \rightarrow 5^1 P_1$
+\end_inset
+
+ : the normal Zeeman effect (spin 0 case) follows semi-classical prediction 
+\end_layout
+
+\begin_layout Itemize
+
+\begin_inset Formula $5^3 S_1 \rightarrow 5^3 P_2$
+\end_inset
+
+ : the anomalous Zeeman effect has spin dependence 
+\end_layout
+
+\begin_layout Itemize
+
+\begin_inset Formula $7^3 S_1 \rightarrow 6^3 P_1$
+\end_inset
+
+ : for 
+\begin_inset Formula $\Delta J = 0$
+\end_inset
+
+ there is no transition where 
+\begin_inset Formula $m_j$
+\end_inset
+
+ changes from 0 to 0 
+\end_layout
+
+\begin_layout Itemize
+
+\begin_inset Formula $7^3 S_1 \rightarrow 6^3 P_2$
+\end_inset
+
+ : the splitting does not depend on the quantum number 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Our experiment measured the polarisations of the line components and confirmed that we obtain 
+\begin_inset Formula $\pi$
+\end_inset
+
+ polarisation for 
+\begin_inset Formula $\Delta m_j = 0$
+\end_inset
+
+ and 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ polarisation for 
+\begin_inset Formula $\Delta m_j = \pm 1$
+\end_inset
+
+. Under transverse observation relative to the magnetic field the 
+\begin_inset Formula $\pi$
+\end_inset
+
+ and 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ lines are linearly polarised parallel and perpendicular to the B-field respectively. Under longitudinal observation 
+\begin_inset Formula $\pi$
+\end_inset
+
+ lines are missing and 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ lines are circularly polarised. We measured the handedness of the polarisation to be left-handed for 
+\begin_inset Formula $\Delta m_j = -1$
+\end_inset
+
+ and right-handed for 
+\begin_inset Formula $\Delta m_j = 1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+We derived the electron charge to mass ratio from the ratio of the splitting to the magnetic field strength. We also determined the sign of the electron charge using the handedness of the circularly polarised light observed. Additionally, we investigated the resolution of the Fabry-Perot using a He-Ne laser as a monochromatic light source.
+\end_layout
+
+\begin_layout Subsection
+Further work
+\end_layout
+
+\begin_layout Standard
+To enhance the experiment's efficacy, future iterations could incorporate a Fabry-Perot interferometer with higher resolution, facilitating the measurement of splittings at lower field strengths. Employing alternative light sources may be necessary to mitigate Doppler broadening, a primary limiting factor. Moreover, utilising a current source and electromagnet combination capable of generating stronger magnetic fields together with a Fabry-Perot interferometer with a higher free spectral range would enable measurements with stronger fields, up to the point where the Zeeman effect model starts to break down and one needs to use the Paschen-Back Effect to describe the phenomenon. Future study could enable applications such as more precise control of atomic and molecular properties for advancements in fields like quantum computing.
+\end_layout
+
+\begin_layout Standard
+ 
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "sample"
+options "alpha"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\start_of_appendix
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%dummy comment inserted by tex2lyx to ensure that this paragraph is not empty
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Appendix - Energy levels and allowed transitions
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec: theory derivation"
+
+\end_inset
+
+ One can find energy levels of an atom by considering the following Hamiltonian: 
+\begin_inset Formula \begin{equation}
+    H = H_{CF} + H_{RE} + H_{SO} + H_{ZE} \label{eq: atomic ham}
+\end{equation}
+\end_inset
+
+where 
+\begin_inset Formula $H_{CF}$
+\end_inset
+
+ is the interaction with the central field, giving the gross structure of the energy levels, 
+\begin_inset Formula $H_{RE}$
+\end_inset
+
+ is the residual electrostatic perturbation, 
+\begin_inset Formula $H_{SO}$
+\end_inset
+
+ is the spin-orbit interaction perturbation and 
+\begin_inset Formula $H_{ZE}$
+\end_inset
+
+ is the interaction with an external magnetic field. In the weak field limit 
+\begin_inset Formula $H_{ZE} \ll H_{SO} \ll H_{RE}$
+\end_inset
+
+ we can treat the Zeeman interaction 
+\begin_inset Formula $H_{ZE}$
+\end_inset
+
+ as a perturbation to the fine-structure levels that arise from L-S coupling 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "Binney_Skinner_2015"
+literal "false"
+
+\end_inset
+
+. The energy of the 
+\begin_inset Formula $H_{ZE}$
+\end_inset
+
+ interaction comes from the precessional motion of the orbital and spin magnetic moments around the external field:
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{equation}
+    H_{ZE} = \mu_B B \cdot (g_L L + g_S S) \label{eq: Hze}
+\end{equation}
+\end_inset
+
+where 
+\begin_inset Formula $g_L = 1$
+\end_inset
+
+ and 
+\begin_inset Formula $g_S = 2$
+\end_inset
+
+ are the g-factors for the orbit and spin respectively. 
+\begin_inset Formula $|n l s j m_L >$
+\end_inset
+
+ is the natural basis for the perturbation because it diagonalises the Hamiltonian 
+\begin_inset Formula $H_{ZE}$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "foot2005atomic"
+literal "false"
+
+\end_inset
+
+. This is because in order to calculate the energy perturbation of the energy level 
+\begin_inset Formula $\Delta E_{ZE}$
+\end_inset
+
+ one needs to take the time average of the operators in equation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq: Hze"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+. 
+\begin_inset Formula $L \cdot B$
+\end_inset
+
+ and 
+\begin_inset Formula $S \cdot B$
+\end_inset
+
+ are not constants of motion, but 
+\begin_inset Formula $J \cdot B$
+\end_inset
+
+ is. We consider projections of 
+\begin_inset Formula $L$
+\end_inset
+
+ and 
+\begin_inset Formula $S$
+\end_inset
+
+ along 
+\begin_inset Formula $J$
+\end_inset
+
+: 
+\begin_inset Formula \begin{equation}
+    H_{ZE} = \mu_B B \cdot J(g_L \frac{|L \cdot J|}{|J|^2} + 
+    g_S \frac{|S \cdot J|}{|J|^2}) \label{eq: Hze J}
+\end{equation}
+\end_inset
+
+We cast the equation into the form 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq: E lvl"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, where the LandÃ© g factor is 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq: gl2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula \begin{equation}
+    \Delta E_{ZE} = m_J g_L \mu_B B \label{eq: E lvl}
+\end{equation}
+\end_inset
+
+The splitting is a function of the j, l, and s quantum numbers: 
+\begin_inset Formula \begin{equation}
+    g_L = 1 + \frac{j(j+1)-l(l+1) +s(s+1)}{j(j+1)} \label{eq: gl2}
+\end{equation}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement h!
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename Energy levels.png
+	width 100line%
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+captionsetup
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+justification=centering
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schematic diagram of the Zeeman splitting. 
+\begin_inset Newline newline
+\end_inset
+
+ Left side: normal Zeeman effect in the Cadmium red line. The LandÃ© g factors 
+\begin_inset Formula $g_L = 1$
+\end_inset
+
+ for Cadmium, thus the line splits into 3 components. 
+\begin_inset Newline newline
+\end_inset
+
+ Right side: anomalous Zeeman effect in the Mercury green line. The splitting is identical to the Cadmium green line splitting. The LandÃ© g factors 
+\begin_inset Formula $g_L$
+\end_inset
+
+ for Mercury are 
+\begin_inset Formula $2$
+\end_inset
+
+ and 
+\begin_inset Formula $3/2$
+\end_inset
+
+, thus the line splits into 9 components. 
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: energy levels"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The energy difference 
+\begin_inset Formula $E$
+\end_inset
+
+ between the two levels of the transition can be written neatly in the form of equation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq: E"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, by grouping the 
+\begin_inset Formula $m_J$
+\end_inset
+
+ and 
+\begin_inset Formula $g_L$
+\end_inset
+
+ factors of the individual levels into an effective g-factor. For a transition 
+\begin_inset Formula $2 \rightarrow 1$
+\end_inset
+
+ the effective LandÃ© g-factor is given by equation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq: g eff2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula \begin{equation}
+    E = g_{eff} B \mu_B \label{eq: E}
+\end{equation}
+\end_inset
+
+
+\begin_inset Formula \begin{equation}
+    g_{eff} = g_{L_2} m_{J_2} - g_{L_1} m_{J_1} \label{eq: g eff2}
+\end{equation}
+\end_inset
+
+The energy difference 
+\begin_inset Formula $E$
+\end_inset
+
+ is the energy of the emitted photon, and can be translated into a wavenumber using 
+\begin_inset Formula $\Delta \nu = E / hc$
+\end_inset
+
+. Using equation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq: E"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ we obtain the theoretical value of the splitting caused by the Zeeman effect, as a linear function of the magnetic field: 
+\begin_inset Formula \begin{equation}
+    \Delta \nu = \frac{g_{eff} \mu_B}{hc} B
+\end{equation}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float table
+placement h!
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Tabular 
+<lyxtabular version="3" rows="9" columns="6">
+<features rotate="0" booktabs="true" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\series bold
+State
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\series bold
+L
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\series bold
+S
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\series bold
+J
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\series bold
+m
+\begin_inset Formula $_J$
+\end_inset
+
+
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $5^1 D_2$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+2 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+2 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+-2, -1, 0, 1, 2 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $5^1 P_1$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+-1, 0, 1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $5^3 S_1$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+-1, 0, 1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $5^3 P_2$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+2 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+-2, -1, 0, 1, 2 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $7^3 S_1$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+-1, 0, 1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $6^3 P_1$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+-1, 0, 1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $7^3 S_1$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+-1, 0, 1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $6^3 P_2$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+1 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+2 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+-2, -1, 0, 1, 2 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+captionsetup
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+justification=centering
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The corresponding possible quantum numbers for the states reached by the transitions studied.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab: quantum_numbers"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The quantum mechanical analysis of the transitions predicts the following selection rules for electric dipole transitions (Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:selection_rules"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+): 
+\begin_inset Float table
+placement h!
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Tabular 
+<lyxtabular version="3" rows="5" columns="2">
+<features rotate="0" booktabs="true" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Selection Rule 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Description 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $\Delta J = 0, \pm 1$
+\end_inset
+
+, but not 
+\begin_inset Formula $0 \rightarrow 0$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Change in total angular momentum 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $\Delta M_J = 0, \pm 1$
+\end_inset
+
+, but not 
+\begin_inset Formula $0 \rightarrow 0$
+\end_inset
+
+ if 
+\begin_inset Formula $\Delta J = 0$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Change in magnetic quantum number 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $\Delta L = \pm 1$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Change in orbital angular momentum 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $\Delta S = 0$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+No change in spin 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Selection rules for electric dipole transitions
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:selection_rules"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Appendix - Experimental setup
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec: app setup"
+
+\end_inset
+
+ 
+\begin_inset Float figure
+placement h!
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename setup photo.jpeg
+	width 65line%
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+captionsetup
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+justification=centering
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Experimental setup in the parallel observation configuration, iris not included. See schematic illustration if Fig. 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: setup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: setup photo"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Appendix - Splitting measurements plotted
+\end_layout
+
+\begin_layout Subsection
+Cadmium
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement h!
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{subfigure}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+linewidth
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename splitting graphs/legend.png
+	width 100line%
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{subfigure}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{subfigure}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+0.47
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+linewidth
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename splitting graphs/Cd green sigma perp gr.png
+	width 100line%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+observation perpendicular to B-field
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: Cd green sig perp"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{subfigure}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{subfigure}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+0.47
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+linewidth
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename splitting graphs/Cd green sigma par gr.png
+	width 100line%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+observation parallel to B-field
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: Cd green sig par"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{subfigure}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Line splitting due to Zeeman effect in the 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ polarised lines in the cadmium green line. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+inner
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+middle
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+outer
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+ data correspond to the pairs of lines labelled (1, 1'), (2, 2') and (3, 3') in Fig. 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "img: Cd_green_sigma_increasing_field"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+. We used a linear fit with intercept of 0 to fit the data. Theoretical dependence is shown with a solid line.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement h!
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename Cd green pi perp small.png
+	width 70line%
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+captionsetup
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+justification=centering
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+captionsetup
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+width=
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+linewidth
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Line splitting due to Zeeman effect in the 
+\begin_inset Formula $\pi$
+\end_inset
+
+ polarised lines in the cadmium green line with the perpendicular configuration
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: Cd green pi"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Mercury
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement h!
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename Hg green sigma par graph.png
+	width 90line%
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+captionsetup
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+width=
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+linewidth
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+captionsetup
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+justification=centering
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Line splitting due to Zeeman effect in the 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ polarised lines in the mercury green line with the parallel configuration. The dotted lines are the linear fits of the measurements, the solid lines are theoretical predictions. Inner, middle and outer components are shown in green, red and blue and correspond to the (1, 1'), (2, 2') and (3, 3') pairs respectively (see Fig. 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "img: Cd_green_sigma_increasing_field"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: Hg green sigma"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement h!
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Box Frameless
+position "c"
+hor_pos "l"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "47text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Plain Layout
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename Hg green pi perp small.png
+	width 100line%
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+captionsetup
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+width=0.9
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+linewidth
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Line splitting due to Zeeman effect in the 
+\begin_inset Formula $\pi$
+\end_inset
+
+ polarised lines in the mercury green line with the perpendicular configuration
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: Hg green pi"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "l"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "47text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Plain Layout
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename Hg blue pi perp small.png
+	width 100line%
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+captionsetup
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+width=0.9
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+linewidth
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Line splitting due to Zeeman effect in the 
+\begin_inset Formula $\pi$
+\end_inset
+
+ polarised lines in the mercury blue line with the perpendicular configuration
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: Hg blue pi"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float table
+placement h!
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Tabular 
+<lyxtabular version="3" rows="3" columns="4">
+<features rotate="0" booktabs="true" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula \( g_{eff} \)
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+B-field 
+\begin_inset Formula $\si{T}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Measured 
+\begin_inset Formula $\Delta \nu \pm \mathrm{FWHM } (\si{m^{-1}})$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+Theoretical 
+\begin_inset Formula $\Delta \nu$
+\end_inset
+
+ 
+\begin_inset Formula $(\si{m^{-1}})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $\pm 1.5$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0.5 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $36.8 \pm 8$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+35.28 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $\pm 2$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+0.5 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset Formula $44.97 \pm 8$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+47.04 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Measurements of the line splitting 
+\begin_inset Formula $\Delta \nu$
+\end_inset
+
+ in the mercury blue sigma lines
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab: Hg blue sigma measurements"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Appendix - Fabry-Perot images
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement h!
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Box Frameless
+position "t"
+hor_pos "l"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "47line%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Plain Layout
+ 
+\begin_inset Graphics 
+	filename mr pi green zeeman 2.png
+	width 100line%
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+captionsetup
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+justification=centering
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fabry-Perot interferometer image of the cadmium green line with magnetic field applied in the perpendicular configuration. Only 
+\begin_inset Formula $\pi$
+\end_inset
+
+ lines visible
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "img: Cd green pi perp"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "l"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "47line%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Plain Layout
+ 
+\begin_inset Graphics 
+	filename hg green 9 lines cropped.jpeg
+	width 100line%
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+captionsetup
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+justification=centering
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cropped Fabry-Perot interferometer image of the mercury green line with magnetic field applied in the perpendicular configuration. All 9 split components are visible. The outer components have low relative intensity and the split components fill the full spectral range of the interferometer, therefore it might be hard to identify all components without adjusting the magnetic field. 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement h!
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Box Frameless
+position "t"
+hor_pos "l"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "47line%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Plain Layout
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename Hg blue pi high zeeman.png
+	width 100line%
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+captionsetup
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+justification=centering
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fabry-Perot interferometer image of the mercury blue line with magnetic field applied in the perpendicular configuration. Only 
+\begin_inset Formula $\pi$
+\end_inset
+
+ lines visible
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "img: Hg blue pi perp"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "l"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "47line%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Plain Layout
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename hg blue sigma lines nearly overlapping.png
+	width 100line%
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+captionsetup
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+justification=centering
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fabry-Perot interferometer image of the mercury blue line with magnetic field applied. Only 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ lines visible
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "img: Hg blue sigma"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Appendix - Line profiles of the instrument
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec: Line profiles"
+
+\end_inset
+
+ The experiment investigated the line profiles of the instrument (section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec: resolution measurement"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) in order to characterise the resolution of the Fabry-Perot interfered and determine the leading source of uncertainty. Line profiles were plotted using the mercury light (Fig. 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "img: Hg line profile"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) and using a Helium-Neon laser with a much narrower inherent line width. The laser light also had a much narrower beam, reducing the importance of having an interferometer with perfectly flat plates. Both of these facts reduced the FWHM observed (Fig. 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "img: He-Ne line profile"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "img: He-Ne image"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+). 
+\begin_inset Float figure
+placement h!
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename line profiles/Hg line profile no field 2.png
+	width 100line%
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+captionsetup
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+justification=centering
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Horizontal line profile through the centre of the Fabry-Perot interference pattern produced by the mercury blue line with no external magnetic field applied
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "img: Hg line profile"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement h!
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Box Frameless
+position "c"
+hor_pos "l"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "67text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Plain Layout
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename line profiles/HeNe laser.png
+	width 100line%
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+captionsetup
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+justification=centering
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Horizontal line profile through the centre 
+\begin_inset Newline newline
+\end_inset
+
+ of the Fabry-Perot interference pattern produced 
+\begin_inset Newline newline
+\end_inset
+
+ by the He-Ne laser
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "img: He-Ne line profile"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "l"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "30text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Plain Layout
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename line profiles/helium neon laser (paper smooted).png
+	width 100line%
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+captionsetup
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+justification=centering
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fabry-Perot interference pattern produced by the He-Ne laser
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "img: He-Ne image"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
