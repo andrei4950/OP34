@@ -160,7 +160,7 @@ We first studied the $5^1 D_2\rightarrow 5^1 P_1$ transition for the cadmium red
 \begin{equation}
     \text{Theoretical value: } \frac{\Delta \nu}{B} = 46.7 \, \si{m^{-1}.T^{-1}}
 \end{equation}
-We were able to observe that, as the magnetic field strength is increased, the maxima split into 3 components: the $\pi$ component ($g_{eff} = 0$) remained in place and the two $\sigma$ ($g_{eff} = \pm 1$) components moved apart on each side of the $\pi$ line. The splitting was assumed to be symmetric between the ($g_{eff} = \pm 1$) pair, this was also visually confirmed. The magnitude of the splitting was plotted in Figure \ref{fig: Cd red}, with the linear dependence measured using a linear fit with $0$ intercept (equation \eqref{res: Cd red}). 
+We were able to observe that, as the magnetic field strength is increased, the maxima split into 3 components: the $\pi$ component ($g_{eff} = 0$) remained in place and the two $\sigma$ ($g_{eff} = \pm 1$) components moved apart on each side of the $\pi$ line. The splitting was predicted to be symmetric between the ($g_{eff} = \pm 1$) pair, this was also experimentally confirmed. The magnitude of the splitting was plotted in Figure \ref{fig: Cd red}, with the linear dependence measured using a linear fit with $0$ intercept (equation \eqref{res: Cd red}). 
 \begin{equation}
     \text{Measured value: } \frac{\Delta \nu}{B} = 46.5 \pm 3.6 \, \si{m^{-1}.T^{-1}}
     \label{res: Cd red}
@@ -174,7 +174,7 @@ We were able to observe that, as the magnetic field strength is increased, the m
 
 
 \subsection{Electron charge to mass ratio} \label{sec: e/m ratio}
-An interesting use of the experiment performed in section \ref{sec: Cd red} is that we can employ the result \ref{res: Cd red} to derive the charge to mass ratio of the electron. The formula for the Bohr magneton $\mu_B = e \hbar / (2 m_e)$ is introduced into equation \eqref{eq: splitting}, and after using that $g_{eff} = 1$ for this transition, we obtain: 
+An interesting use of the experiment performed in section \ref{sec: Cd red} is that we can employ the result \eqref{res: Cd red} to derive the charge to mass ratio of the electron. The formula for the Bohr magneton $\mu_B = e \hbar / (2 m_e)$ is introduced into equation \eqref{eq: splitting}, and after using that $g_{eff} = 1$ for this transition, we obtain: 
 \begin{equation}
     \frac{e}{m_e} = 4 \pi c \frac{\Delta \nu}{B} = (-1.75 \pm 0.14) \times 10^{11} \si{C.kg^{-1}}
 \end{equation}
@@ -223,7 +223,7 @@ The $5^3 S_1\rightarrow 5^3 P_2$ transition, for the cadmium green line, exhibit
     \bottomrule
   \end{tabular}
     \captionsetup{justification=centering}
-  \caption{Measured line splitting wavenumber $\Delta \nu$ dependence on magnetic field $B$ and $g_{eff}$ factor in the cadmium green $5^3 S_1\rightarrow 5^3 P_2$ transition. The calculated values of \(g_{eff}\) are shown with the corresponding polarisation according to the Zeeman effect predictions}
+  \caption{Cadmium green line: measured line splitting wavenumber $\Delta \nu$ dependence on magnetic field $B$ and $g_{eff}$ factor in the $5^3 S_1\rightarrow 5^3 P_2$ transition. The calculated values of \(g_{eff}\) are shown with the corresponding polarisation according to the Zeeman effect predictions}
   \label{tab: Cd green g_eff}
 \end{table}
 This is indeed what we observed: when the magnetic field is applied, the line splits into 9 components. A polariser (or longitudinal observation) is used to select only the $\pi$ or $\sigma$ polarisations in order to more easily perform the measurements (see Fig. \ref{img: Cd_green_sigma_increasing_field} with only $\sigma$ polarisations). Our experiment verifies that the measured line splitting is the same in both longitudinal and perpendicular configurations. 
@@ -246,7 +246,7 @@ The splitting of the mercury green line (Fig. \ref{fig: Hg green sigma}, \ref{fi
     \bottomrule
   \end{tabular}
     \captionsetup{justification=centering}
-  \caption{Measured line splitting wavenumber $\Delta \nu$ dependence on magnetic field $B$ and $g_{eff}$ factor in the mercury green $7^3 S_1\rightarrow 6^3 P_2$ transition. The calculated values of \(g_{eff}\) are shown with the corresponding polarisation according to the Zeeman effect predictions}
+  \caption{Mercury green line: measured line splitting wavenumber $\Delta \nu$ dependence on magnetic field $B$ and $g_{eff}$ factor in the $7^3 S_1\rightarrow 6^3 P_2$ transition. The calculated values of \(g_{eff}\) are shown with the corresponding polarisation according to the Zeeman effect predictions}
   \label{tab: Hg green results}
 \end{table}
 
@@ -303,8 +303,11 @@ Numerical errors were considered, but they turn out to be insignificant: In equa
 \end{equation}
 
 \section{Conclusions} \label{sec: conclusion}
+\subsection{Further work}
+To enhance the experiment's efficacy, future iterations could incorporate a Fabry-Perot interferometer with higher resolution, facilitating the measurement of splittings at lower field strengths. Employing alternative light sources may be necessary to mitigate Doppler broadening, a primary limiting factor. Moreover, utilising a current source and electromagnet combination capable of generating stronger magnetic fields together with a Fabry-Perot interferometer with a higher free spectral range would enable measurements with stronger fields, up to the point where the Zeeman effect model starts to break down and one needs to use the Paschen-Back Effect to describe the phenomenon. Future study could enable applications such as more precise control of atomic and molecular properties for advancements in fields like quantum computing.
+
 \subsection{Aims and results}
-This experimental investigation aimed to validate theoretical predictions regarding the Zeeman effect through the observation of spectral line splittings in transitions of cadmium and mercury. Each of the following transitions verify a property of the phenomenon: 
+This experimental investigation aimed to validate theoretical predictions regarding the Zeeman effect through the observation of spectral line splittings in the presence of magnetic fields in transitions of cadmium and mercury. Each of the following transitions verify a property of the phenomenon: 
 \begin{itemize}
     \item $5^1 D_2 \rightarrow 5^1 P_1$ : the normal Zeeman effect (spin 0 case) follows semi-classical prediction
     \item $5^3 S_1 \rightarrow 5^3 P_2$ : the anomalous Zeeman effect has spin dependence
@@ -314,9 +317,6 @@ This experimental investigation aimed to validate theoretical predictions regard
 Our experiment measured the polarisations of the line components and confirmed that we obtain $\pi$ polarisation for $\Delta m_j = 0$ and $\sigma$ polarisation for $\Delta m_j = \pm 1$. Under transverse observation relative to the magnetic field the $\pi$ and $\sigma$ lines are linearly polarised parallel and perpendicular to the B-field respectively. Under longitudinal observation $\pi$ lines are missing and $\sigma$ lines are circularly polarised. We measured the handedness of the polarisation to be left-handed for $\Delta m_j = -1$ and right-handed for $\Delta m_j = 1$. 
 
 We derived the electron charge to mass ratio from the ratio of the splitting to the magnetic field strength. We also determined the sign of the electron charge using the handedness of the circularly polarised light observed. Additionally, we investigated  the resolution of the Fabry-Perot using a He-Ne laser as a monochromatic light source. 
-
-\subsection{Further work}
-To enhance the experiment's efficacy, future iterations could incorporate a Fabry-Perot interferometer with higher resolution, facilitating the measurement of splittings at lower field strengths. Employing alternative light sources may be necessary to mitigate Doppler broadening, a primary limiting factor. Moreover, utilising a current source and electromagnet combination capable of generating stronger magnetic fields together with a Fabry-Perot interferometer with a higher free spectral range would enable measurements with stronger fields, up to the point where the Zeeman effect model starts to break down and one needs to use the Paschen-Back Effect to describe the phenomenon. Future study could enable applications such as more precise control of atomic and molecular properties for advancements in fields like quantum computing.
 
 \bibliographystyle{alpha}
 \bibliography{sample}

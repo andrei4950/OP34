@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.7)  10 APR 2024 12:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.7)  10 APR 2024 12:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -522,34 +522,34 @@ Package hyperref Info: Link coloring ON on input line 18.
  [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<setup.png, id=132, 920.43875pt x 436.12938pt>
+<setup.png, id=136, 920.43875pt x 436.12938pt>
 File: setup.png Graphic file (type png)
 <use setup.png>
 Package pdftex.def Info: setup.png  used on input line 66.
 (pdftex.def)             Requested size: 314.40001pt x 148.97412pt.
  [2 <./setup.png>] [3] [4]
-<Cd red.png, id=212, 627.34375pt x 358.33875pt>
+<Cd red.png, id=215, 627.34375pt x 358.33875pt>
 File: Cd red.png Graphic file (type png)
 <use Cd red.png>
 Package pdftex.def Info: Cd red.png  used on input line 170.
 (pdftex.def)             Requested size: 290.22107pt x 165.77829pt.
  [5 <./Cd red.png>]
-<Cd green/A.png, id=231, 811.03pt x 805.0075pt>
+<Cd green/A.png, id=234, 811.03pt x 805.0075pt>
 File: Cd green/A.png Graphic file (type png)
 <use Cd green/A.png>
 Package pdftex.def Info: Cd green/A.png  used on input line 190.
 (pdftex.def)             Requested size: 227.3381pt x 225.64624pt.
-<Cd green/B.png, id=232, 811.03pt x 804.00375pt>
+<Cd green/B.png, id=235, 811.03pt x 804.00375pt>
 File: Cd green/B.png Graphic file (type png)
 <use Cd green/B.png>
 Package pdftex.def Info: Cd green/B.png  used on input line 193.
 (pdftex.def)             Requested size: 227.3381pt x 225.36488pt.
-<Cd green/C.png, id=233, 810.02625pt x 804.00375pt>
+<Cd green/C.png, id=236, 810.02625pt x 804.00375pt>
 File: Cd green/C.png Graphic file (type png)
 <use Cd green/C.png>
 Package pdftex.def Info: Cd green/C.png  used on input line 196.
 (pdftex.def)             Requested size: 227.3381pt x 225.64705pt.
-<Cd green/D.png, id=234, 811.03pt x 805.0075pt>
+<Cd green/D.png, id=237, 811.03pt x 805.0075pt>
 File: Cd green/D.png Graphic file (type png)
 <use Cd green/D.png>
 Package pdftex.def Info: Cd green/D.png  used on input line 199.
@@ -579,23 +579,23 @@ Overfull \hbox (13.25958pt too wide) in paragraph at lines 260--271
 
 [8] (./main.bbl [9{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/
 cm-super-ts1.enc}]) [10]
-<Energy levels.png, id=319, 1887.05pt x 631.35875pt>
+<Energy levels.png, id=321, 1887.05pt x 631.35875pt>
 File: Energy levels.png Graphic file (type png)
 <use Energy levels.png>
 Package pdftex.def Info: Energy levels.png  used on input line 353.
 (pdftex.def)             Requested size: 483.69687pt x 161.82767pt.
  [11 <./Energy levels.png>]
-<setup photo.jpeg, id=336, 1027.84pt x 584.1825pt>
+<setup photo.jpeg, id=338, 1027.84pt x 584.1825pt>
 File: setup photo.jpeg Graphic file (type jpg)
 <use setup photo.jpeg>
 Package pdftex.def Info: setup photo.jpeg  used on input line 413.
 (pdftex.def)             Requested size: 314.40001pt x 178.68794pt.
-<IvsB full.png, id=339, 361.35pt x 289.08pt>
+<IvsB full.png, id=341, 361.35pt x 289.08pt>
 File: IvsB full.png Graphic file (type png)
 <use IvsB full.png>
 Package pdftex.def Info: IvsB full.png  used on input line 423.
 (pdftex.def)             Requested size: 232.17242pt x 185.73837pt.
-<IvsB hollow.png, id=340, 361.35pt x 289.08pt>
+<IvsB hollow.png, id=342, 361.35pt x 289.08pt>
 File: IvsB hollow.png Graphic file (type png)
 <use IvsB hollow.png>
 Package pdftex.def Info: IvsB hollow.png  used on input line 429.
@@ -637,40 +637,40 @@ Package pdftex.def Info: Cd green pi perp small.png  used on input line 474.
  [14 <./splitting graphs/legend.png> <./splitting graphs/Cd green sigma perp gr
 .png> <./splitting graphs/Cd green sigma par gr.png> <./Cd green pi perp small.
 png>]
-<Hg green sigma par graph.png, id=381, 1137.24875pt x 736.7525pt>
+<Hg green sigma par graph.png, id=380, 1137.24875pt x 736.7525pt>
 File: Hg green sigma par graph.png Graphic file (type png)
 <use Hg green sigma par graph.png>
 Package pdftex.def Info: Hg green sigma par graph.png  used on input line 487.
 (pdftex.def)             Requested size: 435.32422pt x 282.02612pt.
-<Hg green pi perp small.png, id=384, 852.18375pt x 522.95375pt>
+<Hg green pi perp small.png, id=383, 852.18375pt x 522.95375pt>
 File: Hg green pi perp small.png Graphic file (type png)
 <use Hg green pi perp small.png>
 Package pdftex.def Info: Hg green pi perp small.png  used on input line 498.
 (pdftex.def)             Requested size: 227.3381pt x 139.50772pt.
-<Hg blue pi perp small.png, id=385, 985.6825pt x 676.5275pt>
+<Hg blue pi perp small.png, id=384, 985.6825pt x 676.5275pt>
 File: Hg blue pi perp small.png Graphic file (type png)
 <use Hg blue pi perp small.png>
 Package pdftex.def Info: Hg blue pi perp small.png  used on input line 505.
 (pdftex.def)             Requested size: 227.3381pt x 156.0316pt.
  [15 <./Hg green sigma par graph.png> <./Hg green pi perp small.png> <./Hg blue
  pi perp small.png>]
-<mr pi green zeeman 2.png, id=394, 1204.5pt x 1204.5pt>
+<mr pi green zeeman 2.png, id=392, 1204.5pt x 1204.5pt>
 File: mr pi green zeeman 2.png Graphic file (type png)
 <use mr pi green zeeman 2.png>
 Package pdftex.def Info: mr pi green zeeman 2.png  used on input line 530.
 (pdftex.def)             Requested size: 227.3381pt x 227.33191pt.
-<hg green 9 lines cropped.jpeg, id=395, 601.24625pt x 601.24625pt>
+<hg green 9 lines cropped.jpeg, id=393, 601.24625pt x 601.24625pt>
 File: hg green 9 lines cropped.jpeg Graphic file (type jpg)
 <use hg green 9 lines cropped.jpeg>
 Package pdftex.def Info: hg green 9 lines cropped.jpeg  used on input line 536.
 
 (pdftex.def)             Requested size: 227.3381pt x 227.33833pt.
-<Hg blue pi high zeeman.png, id=396, 1204.5pt x 1204.5pt>
+<Hg blue pi high zeeman.png, id=394, 1204.5pt x 1204.5pt>
 File: Hg blue pi high zeeman.png Graphic file (type png)
 <use Hg blue pi high zeeman.png>
 Package pdftex.def Info: Hg blue pi high zeeman.png  used on input line 545.
 (pdftex.def)             Requested size: 227.3381pt x 227.33191pt.
-<hg blue sigma lines nearly overlapping.png, id=397, 1204.5pt x 1204.5pt>
+<hg blue sigma lines nearly overlapping.png, id=395, 1204.5pt x 1204.5pt>
 File: hg blue sigma lines nearly overlapping.png Graphic file (type png)
 <use hg blue sigma lines nearly overlapping.png>
 Package pdftex.def Info: hg blue sigma lines nearly overlapping.png  used on in
@@ -678,18 +678,18 @@ put line 552.
 (pdftex.def)             Requested size: 227.3381pt x 227.33191pt.
  [16 <./mr pi green zeeman 2.png> <./hg green 9 lines cropped.jpeg> <./Hg blue 
 pi high zeeman.png> <./hg blue sigma lines nearly overlapping.png>]
-<line profiles/Hg line profile no field 2.png, id=407, 578.16pt x 289.08pt>
+<line profiles/Hg line profile no field 2.png, id=405, 578.16pt x 289.08pt>
 File: line profiles/Hg line profile no field 2.png Graphic file (type png)
 <use line profiles/Hg line profile no field 2.png>
 Package pdftex.def Info: line profiles/Hg line profile no field 2.png  used on 
 input line 565.
 (pdftex.def)             Requested size: 483.69687pt x 241.8463pt.
-<line profiles/HeNe laser.png, id=408, 578.16pt x 289.08pt>
+<line profiles/HeNe laser.png, id=406, 578.16pt x 289.08pt>
 File: line profiles/HeNe laser.png Graphic file (type png)
 <use line profiles/HeNe laser.png>
 Package pdftex.def Info: line profiles/HeNe laser.png  used on input line 574.
 (pdftex.def)             Requested size: 324.076pt x 162.03807pt.
-<line profiles/helium neon laser (paper smooted).png, id=409, 1204.5pt x 1204.5
+<line profiles/helium neon laser (paper smooted).png, id=407, 1204.5pt x 1204.5
 pt>
 File: line profiles/helium neon laser (paper smooted).png Graphic file (type pn
 g)
@@ -713,61 +713,41 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: B2913DCC535B59FE3590BFB9A027E274;4791
-(rerunfilecheck)             After:  D5B314EFDCB8CEE6F6A54DB8551879BE;4909.
+(rerunfilecheck)             Before: D5B314EFDCB8CEE6F6A54DB8551879BE;4909
+(rerunfilecheck)             After:  1F35FA633BAEB9E7AB6B7A46D1BEAD42;4909.
  ) 
 Here is how much of TeX's memory you used:
- 16777 strings out of 474116
- 330164 string characters out of 5743683
+ 16773 strings out of 474116
+ 330101 string characters out of 5743683
  1949187 words of memory out of 5000000
- 38846 multiletter control sequences out of 15000+600000
+ 38847 multiletter control sequences out of 15000+600000
  571577 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,10n,80p,1094b,1061s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{table.caption.11} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{table.caption.7} has been referenced but does not e
-xist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{figure.caption.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.D.2} has been referenced but does not ex
-ist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.D.1} has been referenced but does not ex
-ist, replaced by a fixed one
-
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
-/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
-usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
-sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
-local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/lo
-cal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/loca
-l/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/
-texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/te
-xlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texl
-ive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive
-/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/20
-24/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2024/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2024/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2024/texmf-dis
-t/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on main.pdf (17 pages, 11442449 bytes).
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
+r/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
+local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/lo
+cal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
+l/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/
+texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/te
+xlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texli
+ve/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/
+2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/202
+4/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2024/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2024/texmf-d
+ist/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on main.pdf (17 pages, 11442429 bytes).
 PDF statistics:
- 530 PDF objects out of 1000 (max. 8388607)
- 415 compressed objects within 5 object streams
- 115 named destinations out of 1000 (max. 500000)
- 334 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 526 PDF objects out of 1000 (max. 8388607)
+ 411 compressed objects within 5 object streams
+ 110 named destinations out of 1000 (max. 500000)
+ 342 words of extra memory for PDF output out of 10000 (max. 10000000)
 
