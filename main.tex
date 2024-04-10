@@ -41,18 +41,51 @@ In this paper we first discuss the theory behind the Zeeman effect (section \ref
 
 \section{Theory and Methods}
 \subsection{Energy levels and allowed transitions} \label{sec: theory}
-We derived the theoretical value of the splitting $\Delta \nu $ caused by the Zeeman effect, as a linear function of the magnetic field $B$ (equation \eqref{eq: splitting}). The full derivation is included in the Appendix \ref{sec: theory derivation}. 
+One can find energy levels of an atom by considering the following Hamiltonian: 
 \begin{equation}
-    \Delta \nu = \frac{g_{eff} \mu_B}{hc} B \label{eq: splitting}
+    H = H_{CF} + H_{RE} + H_{SO} + H_{ZE} \label{eq: atomic ham}
 \end{equation}
-The splitting is linearly dependent on the effective Landé g-factor $g_{eff}$ given by equation \eqref{eq: g eff}: 
+where $H_{CF}$ is the interaction with the central field, giving the gross structure of the energy levels, $H_{RE}$ is the residual electrostatic perturbation, $H_{SO}$ is the spin-orbit interaction perturbation and $H_{ZE}$ is the interaction with an external magnetic field. In the weak field limit $H_{ZE} \ll H_{SO} \ll H_{RE}$ we can treat the Zeeman interaction $H_{ZE}$ as a perturbation to the fine-structure levels that arise from L-S coupling \cite{Binney_Skinner_2015}. The energy of the $H_{ZE}$ interaction comes from the precessional motion of the orbital and spin magnetic moments around the external field: 
+
 \begin{equation}
-    g_{eff} = g_{L_2} m_{J_2} - g_{L_1} m_{J_1} \label{eq: g eff}
+    H_{ZE} = \mu_B B \cdot (g_L L + g_S S) \label{eq: Hze}
 \end{equation}
-for a transition $2 \rightarrow 1$. The splitting is a function of the $m_J$, $j$, $l$, and $s$ quantum numbers: 
+where $g_L = 1$ and $g_S = 2$ are the g-factors for the orbit and spin respectively. $|n l s j m_L >$ is the natural basis for the perturbation because it diagonalises the Hamiltonian $H_{ZE}$ \cite{foot2005atomic}. This is because in order to calculate the energy perturbation of the energy level $\Delta E_{ZE}$ one needs to take the time average of the operators in equation \eqref{eq: Hze}. $L \cdot B$ and $S \cdot B$ are not constants of motion, but $J \cdot B$ is. We consider projections of $L$ and $S$ along $J$: 
+\begin{equation}
+    H_{ZE} = \mu_B B \cdot J(g_L \frac{|L \cdot J|}{|J|^2} + 
+    g_S \frac{|S \cdot J|}{|J|^2}) \label{eq: Hze J}
+\end{equation}
+We cast the equation into the form \eqref{eq: E lvl}, where the Landé g factor is \eqref{eq: gl}: 
+\begin{equation}
+    \Delta E_{ZE} = m_J g_L \mu_B B \label{eq: E lvl}
+\end{equation}
+The splitting is a function of the j, l, and s quantum numbers: 
 \begin{equation}
     g_L = 1 + \frac{j(j+1)-l(l+1) +s(s+1)}{j(j+1)} \label{eq: gl}
 \end{equation}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\linewidth]{Energy levels.png}
+    \captionsetup{justification=centering}
+    \caption{Schematic diagram of the Zeeman splitting. 
+    \textbf{Left side:} normal Zeeman effect in the Cadmium red line. The Landé g factors $g_L = 1$ for Cadmium, thus the line splits into 3 components. 
+    \textbf{Right side:} anomalous Zeeman effect in the Mercury green line. The splitting is identical to the Cadmium green line splitting. The Landé g factors $g_L$ for Mercury are $2$ and $3/2$, thus the line splits into 9 components. }
+    \label{fig: energy levels}
+\end{figure}
+The energy difference $E$ between the two levels of the transition can be written neatly in the form of equation \eqref{eq: E}, by grouping the $m_J$ and $g_L$ factors of the individual levels into an effective g-factor. For a transition $2 \rightarrow 1$ the effective Landé g-factor is given by equation \eqref{eq: g eff}: 
+\begin{equation}
+    E = g_{eff} B \mu_B \label{eq: E}
+\end{equation}
+\begin{equation}
+    g_{eff} = g_{L_2} m_{J_2} - g_{L_1} m_{J_1} \label{eq: g eff}
+\end{equation}
+The energy difference $E$ is the energy of the emitted photon, and can be translated into a wavenumber using $\Delta \nu = E / hc$. Using equation \eqref{eq: E} we obtain the theoretical value of the splitting caused by the Zeeman effect, as a linear function of the magnetic field: 
+\begin{equation}
+    \Delta \nu = \frac{g_{eff} \mu_B}{hc} B
+    \label{eq: splitting}
+\end{equation}
+
 
 %-------------------------------------------------------------------
 
@@ -325,51 +358,6 @@ We derived the electron charge to mass ratio from the ratio of the splitting to 
 
 \appendix
 \section{Appendix - Energy levels and allowed transitions} \label{sec: theory derivation}
-One can find energy levels of an atom by considering the following Hamiltonian: 
-\begin{equation}
-    H = H_{CF} + H_{RE} + H_{SO} + H_{ZE} \label{eq: atomic ham}
-\end{equation}
-where $H_{CF}$ is the interaction with the central field, giving the gross structure of the energy levels, $H_{RE}$ is the residual electrostatic perturbation, $H_{SO}$ is the spin-orbit interaction perturbation and $H_{ZE}$ is the interaction with an external magnetic field. In the weak field limit $H_{ZE} \ll H_{SO} \ll H_{RE}$ we can treat the Zeeman interaction $H_{ZE}$ as a perturbation to the fine-structure levels that arise from L-S coupling \cite{Binney_Skinner_2015}. The energy of the $H_{ZE}$ interaction comes from the precessional motion of the orbital and spin magnetic moments around the external field: 
-
-\begin{equation}
-    H_{ZE} = \mu_B B \cdot (g_L L + g_S S) \label{eq: Hze}
-\end{equation}
-where $g_L = 1$ and $g_S = 2$ are the g-factors for the orbit and spin respectively. $|n l s j m_L >$ is the natural basis for the perturbation because it diagonalises the Hamiltonian $H_{ZE}$ \cite{foot2005atomic}. This is because in order to calculate the energy perturbation of the energy level $\Delta E_{ZE}$ one needs to take the time average of the operators in equation \eqref{eq: Hze}. $L \cdot B$ and $S \cdot B$ are not constants of motion, but $J \cdot B$ is. We consider projections of $L$ and $S$ along $J$: 
-\begin{equation}
-    H_{ZE} = \mu_B B \cdot J(g_L \frac{|L \cdot J|}{|J|^2} + 
-    g_S \frac{|S \cdot J|}{|J|^2}) \label{eq: Hze J}
-\end{equation}
-We cast the equation into the form \eqref{eq: E lvl}, where the Landé g factor is \eqref{eq: gl2}: 
-\begin{equation}
-    \Delta E_{ZE} = m_J g_L \mu_B B \label{eq: E lvl}
-\end{equation}
-The splitting is a function of the j, l, and s quantum numbers: 
-\begin{equation}
-    g_L = 1 + \frac{j(j+1)-l(l+1) +s(s+1)}{j(j+1)} \label{eq: gl2}
-\end{equation}
-
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=\linewidth]{Energy levels.png}
-    \captionsetup{justification=centering}
-    \caption{Schematic diagram of the Zeeman splitting. \\
-    Left side: normal Zeeman effect in the Cadmium red line. The Landé g factors $g_L = 1$ for Cadmium, thus the line splits into 3 components. \\
-    Right side: anomalous Zeeman effect in the Mercury green line. The splitting is identical to the Cadmium green line splitting. The Landé g factors $g_L$ for Mercury are $2$ and $3/2$, thus the line splits into 9 components. }
-    \label{fig: energy levels}
-\end{figure}
-The energy difference $E$ between the two levels of the transition can be written neatly in the form of equation \eqref{eq: E}, by grouping the $m_J$ and $g_L$ factors of the individual levels into an effective g-factor. For a transition $2 \rightarrow 1$ the effective Landé g-factor is given by equation \eqref{eq: g eff2}: 
-\begin{equation}
-    E = g_{eff} B \mu_B \label{eq: E}
-\end{equation}
-\begin{equation}
-    g_{eff} = g_{L_2} m_{J_2} - g_{L_1} m_{J_1} \label{eq: g eff2}
-\end{equation}
-The energy difference $E$ is the energy of the emitted photon, and can be translated into a wavenumber using $\Delta \nu = E / hc$. Using equation \eqref{eq: E} we obtain the theoretical value of the splitting caused by the Zeeman effect, as a linear function of the magnetic field: 
-\begin{equation}
-    \Delta \nu = \frac{g_{eff} \mu_B}{hc} B
-\end{equation}
-
-
 \begin{table}[h!]
     \centering
     \begin{tabular}{cccccc}
