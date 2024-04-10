@@ -10,6 +10,7 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\captionsetup{font=footnotesize} % can also use \scriptsize
 
 \title{OP34: The Zeeman effect}
 \author{Andrei-Nicolae Taropa}
@@ -58,23 +59,6 @@ for a transition $2 \rightarrow 1$. The splitting is a function of the $m_J$, $j
 \subsection{Apparatus} \label{sec: aparatus}
 To verify the aforementioned theory, we aimed to measure the splitting of the emission lines caused by the external magnetic field in the hyper-fine structure. In order to achieve this, we employed the use of a Fabry-Perot interferometer that would enable us to measure the small differences in wavenumber between the split components of the line. 
 
-\begin{comment}
-\begin{figure} 
-\centering
-    \begin{minipage}[c]{0.65\textwidth}
-        \includegraphics[width=\linewidth]{setup.png}
-        \includegraphics[width=\linewidth]{setup photo.jpeg}
-    \end{minipage}
-    \begin{minipage}[c]{0.03\textwidth}
-        
-    \end{minipage}
-    \begin{minipage}[c]{0.3\textwidth}
-        \caption{(a) Upper figure: Diagram of the experimental setup \\ 
-        (b) Lower figure: Image of the experimental setup in the parallel observation configuration, iris not included}
-        \label{fig:setup both}    
-    \end{minipage}
-\end{figure}
-\end{comment}
 The experimental setup (Fig. \ref{fig: setup}) was comprised of the light source (Cd or Hg lamp), placed in between two electromagnets with iron cores. A filter selected the desired spectral line. A lens ($f = 10$ \si{cm}) created a parallel beam together with the iris that reduced the effective surface of the Fabry-Perot, potentially increasing resolution. An optical diffuser helped obtain a more uniform illumination, making measurements easier to perform. The Fabry-Perot interferometer and polariser are used to to determine the type of polarisation observed and to select between different polarisations. The waveplate helped us determine the handedness of the circularly polarised light. The phenomenon is observed using a camera with focal length of $f = 75$ \si{mm}. The iris, diffuser, waveplate and polariser were used as required, in order to get the best image possible. 
 
 \begin{figure}
@@ -91,25 +75,8 @@ The optical path $nd = 4.42 \pm 0.17 \si{mm}$ between the plates of the Fabry-Pe
 \begin{equation}
     nd = \lambda \frac{f_c^2}{r_m^2-r_{m-1}^2} \label{eq: d}
 \end{equation}
-The current in the electromagnets was correlated with the magnetic field obtained. We used a Hall effect sensor to measure the magnetic field in which the light bulb will be placed. We used several readings at different currents to obtain the relation between the current in the coils and the field obtained (Fig. \ref{fig:IvsB}). For each current value we were able to measure a range of magnetic field values, because the field in between the two cores was not perfectly uniform. We tried to measure the value at the centre point and we estimated the error on the measurement based on how much the field changed as we moved the Hall effect probe in between the two iron cores. The fact that the field was not linear contributed to the widening of the observed lines. It was also observed that there was a residual magnetic field, because of the iron cores. This was accounted for when fitting the measurements. We were able to obtain a stronger field with the hollow iron cores (Fig. \ref{fig:IvsB hollow}) because the cores were mounted around $30\%$ closer together.
+The current in the electromagnets was correlated with the magnetic field obtained. We used a Hall effect sensor to measure the magnetic field in which the lamp will be placed. We used several readings at different currents to obtain the relation between the current in the coils and the field obtained (Fig. \ref{fig:IvsB}). For each current value we were able to measure a range of magnetic field values, because the field in between the two cores was not perfectly uniform. We tried to measure the value at the centre point and we estimated the error on the measurement based on how much the field changed as we moved the Hall effect probe in between the two iron cores. The fact that the field was not linear contributed to the widening of the observed lines. It was also observed that there was a residual magnetic field, because of the iron cores. This was accounted for when fitting the measurements. We were able to obtain a stronger field with the hollow iron cores (Fig. \ref{fig:IvsB hollow}) because the cores were mounted around $30\%$ closer together.
 
-\begin{figure}
-  \centering
-  \begin{subfigure}{0.48\linewidth}
-    \includegraphics[width=\linewidth]{IvsB full.png}
-    \caption{Full iron core}
-    \label{fig:IvsB full}
-  \end{subfigure}
-  \hfill
-  \begin{subfigure}{0.48\linewidth}
-    \includegraphics[width=\linewidth]{IvsB hollow.png}
-    \caption{Hollow iron core}
-    \label{fig:IvsB hollow}
-  \end{subfigure}
-  \captionsetup{justification=centering}
-  \caption{Conversion of the applied current to magnetic field.  The data was fitted with a linear fit ($y = a x + b$) using the method of least squares. Data points shown as central value $\pm$ variation of the field in the gap between the cores. Parameters of the best-fit are: \ref{fig:IvsB full}: $a = 0.312 \pm 0.004 $ \si{T.A^{-1}} and $ b = 0.013 \pm 0.002 $ \si{T} and \ref{fig:IvsB hollow}: $a = 0.472 \pm 0.004 $ \si{T.A^{-1}} and $ b = 0.032 \pm 0.003 $ \si{T}}
-  \label{fig:IvsB}
-\end{figure}
 The scale on the polariser (ranging from 0 to 360 degrees) was correlated with the direction of E-field using Brewster's angle. Vertical polarisation corresponds to 135 degrees (and horizontal at a $45^\circ$ angle). We used the calibrated polariser to identify the polarisation of the lines under perpendicular observation. We identified the $\sigma$ component as the one with polarisation perpendicular to the B field and the $\pi$ component as polarised longitudinally. The order (and position) of the split $\sigma$ and $\pi$ components is as predicted by the Zeeman effect. Under longitudinal observation we were not able to observe $\pi$ components (as predicted), and we were able to find that the $\sigma$ components have circular polarisation. The handedness of the circular polarisation was determined in section \ref{sec: e/m ratio} by using a $543 \si{nm}$ quarter-wave plate. 
 
 \subsection{Instrumental resolution}
@@ -126,7 +93,7 @@ There are four main factors that limit the maximum wavenumber measurement resolu
   \begin{equation}
       \delta \nu_{\text{Dopp Hg blue}} = 3.5 \si{m^{-1}}
   \end{equation}
-  \item \label{item: resolution} In theory, the resolution of a Fabry-Perot interferometer is related to the finesse $F$ of the instrument by equation \eqref{eq: instr resolution}. 
+  \item \label{item: resolution} In theory, the resolution of a Fabry-Perot interferometer is related to the finesse $F$ of the instrument by: 
   \begin{equation} \label{eq: instr resolution}
       \delta \nu_{\text{instr}} = \Delta \nu_{\text{FSR}} F^{-1} = \frac{1}{2d} F^{-1}
   \end{equation}
@@ -174,25 +141,7 @@ Combining these equations we find the splitting $\Delta \nu$ to be:
 \end{equation}
 where $r_m$ is the radius of the inner component, $r'_m$ is the radius of the outer component for the order $m$, and $nd$ is the optical path \eqref{eq: d}. The radii of the rings in the interference pattern are measured using the Thor Labs software (Fig. \ref{fig: d measurement}). The software is used to control shutter and gain of the camera to obtain the desired image brightness. We used the circular measure tool to manually fit circles to the maxima in the interference pattern and the software provides the radius of the circles in number of pixels. 
 
-\begin{comment}
-    \begin{figure} 
-\centering
-    \begin{minipage}[c]{0.6\textwidth}
-        \includegraphics[width=\linewidth]{d measurement.png}
-    \end{minipage}
-    \begin{minipage}[c]{0.3\textwidth}
-        \caption{User interface of the program used for measurements. Image shows the Fabry-Perot interference pattern of the cadmium red line, no magnetic field applied.}
-    \label{fig: d measurement}
-    \end{minipage}
-\end{figure}
-\end{comment}
-\begin{figure} 
-    \centering
-    \includegraphics[width=0.65\linewidth]{d measurement.png}
-    \captionsetup{justification=centering}
-    \caption{User interface of the program used for measurements. Image shows the Fabry-Perot interference pattern of the cadmium red line, no magnetic field applied.}
-    \label{fig: d measurement}
-\end{figure}
+
 
 %-------------------------------------------------------------------
 
@@ -465,6 +414,36 @@ The quantum mechanical analysis of the transitions predicts the following select
     \captionsetup{justification=centering}
     \caption{Experimental setup in the parallel observation configuration, iris not included. See schematic illustration if Fig. \ref{fig: setup}}
     \label{fig: setup photo}
+\end{figure}
+
+\section{Current to field conversion}
+\begin{figure}[h!]
+  \centering
+  \begin{subfigure}{0.48\linewidth}
+    \includegraphics[width=\linewidth]{IvsB full.png}
+    \caption{Full iron core}
+    \label{fig:IvsB full}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}{0.48\linewidth}
+    \includegraphics[width=\linewidth]{IvsB hollow.png}
+    \caption{Hollow iron core}
+    \label{fig:IvsB hollow}
+  \end{subfigure}
+  \captionsetup{justification=centering}
+  \caption{Conversion of the applied current to magnetic field.  The data was fitted with a linear fit ($y = a x + b$) using the method of least squares. Data points shown as central value $\pm$ variation of the field in the gap between the cores. Parameters of the best-fit are: \ref{fig:IvsB full}: $a = 0.312 \pm 0.004 $ \si{T.A^{-1}} and $ b = 0.013 \pm 0.002 $ \si{T} and \ref{fig:IvsB hollow}: $a = 0.472 \pm 0.004 $ \si{T.A^{-1}} and $ b = 0.032 \pm 0.003 $ \si{T}}
+  \label{fig:IvsB}
+\end{figure}
+
+\section{User interface}
+The user interface used to make measurements is shown in figure \ref{fig: Cd red}. We used the circle tool to overlay circles on the interference maxima. The circle radius is measured in pixels and then converted to milimiters using the known size of pixels. 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.65\linewidth]{d measurement.png}
+    \captionsetup{justification=centering}
+    \caption{User interface of the program used for measurements. Image shows the Fabry-Perot interference pattern of the cadmium red line, no magnetic field applied.}
+    \label{fig: d measurement}
 \end{figure}
 
 \newpage
