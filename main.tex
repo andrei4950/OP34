@@ -12,6 +12,21 @@
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 \captionsetup{font=footnotesize} % can also use \scriptsize
 
+% Adjust section title font sizes
+\usepackage{titlesec}
+%\titleformat*{\section}{\normalsize\bfseries}
+%\titleformat*{\subsection}{\small\bfseries}
+%\titleformat*{\subsubsection}{\small\bfseries}
+
+\titlespacing*{\section}{0pt}{1ex}{0.5ex}
+\titlespacing*{\subsection}{0pt}{1ex}{0.5ex}
+\titlespacing*{\subsubsection}{0pt}{0.5ex}{0.5ex}
+
+% Reduce space above and below figures
+\setlength{\abovecaptionskip}{3pt}
+\setlength{\belowcaptionskip}{0pt}
+\setlength{\intextsep}{5pt} % Adjust this value as needed
+
 \title{OP34: The Zeeman effect}
 \author{Andrei-Nicolae Taropa}
 
@@ -360,6 +375,7 @@ We derived the electron charge to mass ratio from the ratio of the splitting to 
 
 \appendix
 \section{Appendix - Energy levels and allowed transitions} \label{sec: theory derivation}
+In this experiment, we are investigating 4 transitions of cadmium and mercury. The states reached by these transitions are listed in table \ref{tab: quantum_numbers}, together with the quantum numbers corresponding to the state. These quantum numbers are used in calculating the splitting caused by the Zeeman interaction. 
 \begin{table}[h!]
     \centering
     \begin{tabular}{cccccc}
@@ -397,7 +413,10 @@ The quantum mechanical analysis of the transitions predicts the following select
     \caption{Selection rules for electric dipole transitions}
     \label{tab:selection_rules}
 \end{table}
+
+
 \section{Appendix - Experimental setup} \label{sec: app setup}
+The experiment was conducted on an optical table, as shown in Figure \ref{fig: setup photo}. A schematic representation with the components labeled is shown in Figure \ref{fig: setup}. 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.65\linewidth]{setup photo.jpeg}
