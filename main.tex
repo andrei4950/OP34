@@ -406,7 +406,23 @@ The quantum mechanical analysis of the transitions predicts the following select
     \label{fig: setup photo}
 \end{figure}
 
-\section{Current to field conversion}
+\section{Appendix - Current to field conversion}
+We cannot measure the magnetic field while having the lamp in position due to space constraints. Therefore we instead measure the magnetic field indirectly, by measuring the current flowing through the electromagnets. This requires a current-field calibration, sown is Figure \ref{fig:IvsB}. We use a linear fit $y = a x + b$, with two free parameters, in order to take into account the possibility of having some residual magnetic field caused by the iron cores becoming magnetised. Same procedure was followed for the full iron cores (Figure \ref{fig:IvsB full}) and hollow iron cores (Figure \ref{fig:IvsB hollow}). The best fit parameters are found by the method of least squares: 
+\begin{equation}
+	\text{Full iron cores: }
+	\hspace {1cm} 
+	a = 0.312 \pm 0.004  \text{ } \si{T.A^{-1}} 
+	\hspace {1cm} 
+	b = 0.013 \pm 0.002 \text{ }  \si{T} 
+\end{equation}
+\begin{equation}
+	\text{Hollow iron cores: }
+	\hspace {1cm} 
+	a = 0.472 \pm 0.004  \text{ } \si{T.A^{-1}} 
+	\hspace {1cm} 
+	b = 0.032 \pm 0.003  \text{ } \si{T} 
+\end{equation}
+
 \begin{figure}[h!]
   \centering
   \begin{subfigure}{0.48\linewidth}
@@ -425,7 +441,7 @@ The quantum mechanical analysis of the transitions predicts the following select
   \label{fig:IvsB}
 \end{figure}
 
-\section{User interface}
+\section{Appendix - User interface}
 The user interface used to make measurements is shown in figure \ref{fig: Cd red}. We used the circle tool to overlay circles on the interference maxima. The circle radius is measured in pixels and then converted to milimiters using the known size of pixels. 
 
 \begin{figure}[h!]
