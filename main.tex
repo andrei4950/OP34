@@ -11,6 +11,8 @@
 \usepackage{graphicx}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 \captionsetup{font=footnotesize} % can also use \scriptsize
+\usepackage{wrapfig}
+
 
 % Adjust section title font sizes
 \usepackage{titlesec}
@@ -109,7 +111,7 @@ The energy difference $E$ is the energy of the emitted photon, and can be transl
 \subsection{Experimental setup} \label{sec: aparatus}
 To verify the aforementioned theory, we aimed to measure the splitting of the emission lines caused by the external magnetic field in the fine structure. In order to achieve this, we employed the use of a Fabry-Perot interferometer that would enable us to measure the small differences in wavenumber between the split components of the line. 
 
-The experimental setup (Fig. \ref{fig: setup}) was comprised of the light source (Cd or Hg lamp), placed in between two electromagnets with iron cores. A filter selected the desired spectral line. A lens ($f = 10$ \si{cm}) created a parallel beam together with the iris that reduced the effective surface of the Fabry-Perot. An optical diffuser helped obtain a more uniform illumination, making measurements easier to perform. The Fabry-Perot interferometer and polariser are used to to determine the type of polarisation observed and to select between different polarisations. The waveplate helped us determine the handedness of the circularly polarised light. The phenomenon is observed using a camera with focal length of $f = 75$ \si{mm}. The iris, diffuser, waveplate and polariser were used as required, in order to get the best image possible. 
+The experimental setup (Fig. \ref{fig: setup}) was comprised of the light source (Cd or Hg lamp), placed in between two electromagnets with iron cores. A filter selected the desired spectral line. A lens ($f = 10$ \si{cm}) created a parallel beam together with the iris that reduced the effective surface of the Fabry-Perot. An optical diffuser helped obtain a more uniform illumination, making measurements easier to perform. The Fabry-Perot interferometer and polariser are used to to determine the type of polarisation observed and to select between different polarisations. The waveplate helped us determine the handedness of the circularly polarised light. The phenomenon is observed using a Basler acA1920- 40um camera with focal length of $f = 75$ \si{mm}. The iris, diffuser, waveplate and polariser were used as required, in order to get the best image possible. 
 
 \begin{figure}
     \centering
@@ -120,12 +122,29 @@ The experimental setup (Fig. \ref{fig: setup}) was comprised of the light source
 \end{figure}
 
 \subsection{B-field and polariser calibration}
-The current in the electromagnets was correlated with the magnetic field obtained. We used a Hall effect sensor to measure the magnetic field in which the lamp will be placed. We used several readings at different currents to obtain the relation between the current in the coils and the field obtained (Fig. \ref{fig:IvsB}). For each current value we were able to measure a range of magnetic field values, because the field in between the two cores was not perfectly uniform. We tried to measure the value at the centre point and we estimated the error on the measurement based on how much the field changed as we moved the Hall effect probe in between the two iron cores. The fact that the field was not linear contributed to the widening of the observed lines. It was also observed that there was a residual magnetic field, because of the iron cores. This was accounted for when fitting the measurements. We were able to obtain a stronger field with the hollow iron cores (Fig. \ref{fig:IvsB hollow}) because the cores were mounted around $30\%$ closer together.
+\begin{figure}[h!]
+  \centering
+  \begin{subfigure}{0.48\linewidth}
+    \includegraphics[width=\linewidth]{IvsB full.png}
+    \caption{Full iron core}
+    \label{fig:IvsB full}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}{0.48\linewidth}
+    \includegraphics[width=\linewidth]{IvsB hollow.png}
+    \caption{Hollow iron core}
+    \label{fig:IvsB hollow}
+  \end{subfigure}
+  \captionsetup{justification=centering}
+  \caption{Conversion of the applied current to magnetic field.  The data was fitted with a linear fit ($y = a x + b$) using the method of least squares. Data points shown as central value $\pm$ variation of the field in the gap between the cores. Parameters of the best-fit are: \ref{fig:IvsB full}: $a = 0.312 \pm 0.004 $ \si{T.A^{-1}} and $ b = 0.013 \pm 0.002 $ \si{T} and \ref{fig:IvsB hollow}: $a = 0.472 \pm 0.004 $ \si{T.A^{-1}} and $ b = 0.032 \pm 0.003 $ \si{T}}
+  \label{fig:IvsB}
+\end{figure}
+The current in the electromagnets was correlated with the magnetic field obtained. We used a Hall effect sensor to measure the magnetic field in which the lamp will be placed. We made several readings at different currents to obtain the relation between the current in the coils and the field obtained (measurement data plotted in Fig. \ref{fig:IvsB}). For each current value we were able to measure a range of magnetic field values, because the field in between the two cores was not perfectly uniform. We tried to measure the value at the centre point and we estimated the error on the measurement based on how much the field changed as we moved the Hall effect probe in between the two iron cores. The fact that the field was not linear contributed to the widening of the observed lines. It was also observed that there was a residual magnetic field, because of the iron cores. This was accounted for when fitting the measurements. We were able to obtain a stronger field with the hollow iron cores (Fig. \ref{fig:IvsB hollow}) because the cores were mounted around $30\%$ closer together.
 
-The scale on the polariser (ranging from 0 to 360 degrees) was correlated with the direction of E-field using Brewster's angle. Vertical polarisation corresponds to 135 degrees (and horizontal at a $45^\circ$ angle). We used the calibrated polariser to identify the polarisation of the lines under perpendicular observation. We identified the $\sigma$ component as the one with polarisation perpendicular to the B field and the $\pi$ component as polarised longitudinally. The order (and position) of the split $\sigma$ and $\pi$ components is as predicted by the Zeeman effect. Under longitudinal observation we were not able to observe $\pi$ components (as predicted), and we were able to find that the $\sigma$ components have circular polarisation. The handedness of the circular polarisation was determined in section \ref{sec: e/m ratio} by using a $543 \si{nm}$ quarter-wave plate. 
+The scale on the polariser (ranging from 0 to 360 degrees) was correlated with the direction of E-field using Brewster's angle. Vertical polarisation corresponds to the 135 degrees mark (and horizontal to the $45^\circ$ angle). We used the calibrated polariser to identify the polarisation of the lines under perpendicular observation. We identified the $\sigma$ component as the one with polarisation perpendicular to the B field and the $\pi$ component as polarised longitudinally. The order (and position) of the split $\sigma$ and $\pi$ components is as predicted by the Zeeman effect. Under longitudinal observation we were not able to observe $\pi$ components (as predicted), and we were able to find that the $\sigma$ components have circular polarisation. The handedness of the circular polarisation was determined in section \ref{sec: e/m ratio} by using a $543 \si{nm}$ quarter-wave plate. 
 
 \subsection{Fabry-Perot interferometer}
-A Fabry-Perot interferometer consists of two parallel and highly reflective transparent plates, typically glass, separated by a small distance. When light passes through these plates, it creates interference patterns, resulting in concentric circular fringes. These fringes indicate interference between multiple light paths, with higher fringe orders towards the center. The free spectral range of the interferometer refers to the spacing between adjacent fringes, determining the range of wavelengths it can resolve (see equation \eqref{eq: instr resolution}. 
+A Fabry-Perot interferometer consists of two parallel and highly reflective transparent plates, typically glass, separated by a small distance. When light passes through these plates, it creates interference patterns, resulting in concentric circular fringes. These fringes indicate interference between multiple light paths, with higher fringe orders towards the center. The free spectral range of the interferometer refers to the spacing between adjacent fringes, determining the range of wavelengths it can resolve (see equation \eqref{eq: instr resolution}). 
 Finesse, on the other hand, represents the sharpness of the fringes, indicating how well-defined they are. Finesse is related to the reflectivity of the mirrors by \eqref{eq: finesse}. 
 
 The plates of the Fabry-Perot can be adjusted with two piezoelectric crystals (on the two axes). We could find the position where the plates of the interferometer are parallel by moving the observer in the left-right and up-down directions and checking if the interference pattern changes. We started with the lens such that the light bulb is in focus, but later in the experiment we also tried moving it to obtain a more diffuse image of the bulb. This helped with the visibility of the interference ring. The camera focus was set to $\infty$ and the aperture was open all the way to maximise the light hitting the sensor. 
@@ -138,10 +157,11 @@ The optical path $nd = 4.42 \pm 0.17 \si{mm}$ between the plates of the Fabry-Pe
 
 Despite changing the position of the plates when re-calibrating the interferometer in order to maintain the sharp image, we were not able to measure a change in the distance between the plates. This is because our error on distance $d$ is on the order of $0.17 \si{mm}$ and the adjustments made during re-calibration are much smaller than the error margin, on the order of the wavelength $\lambda \approx 500 \si{nm}$. We conclude therefore that one should not be concerned with remeasuring the distance between the plates. It can also be safely assumed that the refractive index for air stays constant ($n=1$), as its dependence on temperature and wavelength is much smaller that other sources of error in the experiment \cite{Polyanskiy2024}. 
 
-\subsection{Instrumental resolution}
+\subsection{Instrumental resolution} 
+\label{sec: instr err}
 To put into perspective the order of magnitude of the line splitting values measured, we can take an average magnetic field of $B = 0.3$T and a g-factor of $g_{eff}=1$, which give a splitting of $\Delta \nu = 14 \mathrm{m}^{-1}$. 
  
-There are four main factors that limit the maximum wavenumber measurement resolution that can be obtained: Doppler broadening \ref{item: doppler}, Airy distribution \ref{item: resolution}, the non-uniformity of the B-field \ref{item: field} and the mirror flatness \ref{item: flattness}. 
+There are four main factors that limit the maximum wavenumber measurement resolution $\delta \nu$ that can be obtained: Doppler broadening \ref{item: doppler}, Airy distribution \ref{item: resolution}, the non-uniformity of the B-field \ref{item: field} and the mirror flatness \ref{item: flattness}. 
 \begin{enumerate}[label=(\alph*), ref=(\alph*)]
   \item \label{item: doppler} The spectral width of a line will be dominated by Doppler broadening. By assuming a Boltzmann distribution $f(v) = \sqrt{\frac{m}{2 \pi k T}} e^{-\frac{mv^2}{2kT}}$ for the particles, and by substituting the velocity $v$ from the Doppler shift equation $f = f_0 (1+v/c)$, we were able to recognise a Gaussian distribution with the FWHM of: 
   \begin{equation}
@@ -178,7 +198,7 @@ The resulting total resolution limit of the instrument was estimated by adding i
     \delta \nu_{\text{total}} = \sqrt{\delta \nu_{\text{Dopp}}^2 + \delta \nu_{\text{instr}}^2 + \delta \nu_{\text{B}}^2} = 3.9 \si{m^{-1}}
 \end{equation}
 
-\subsection{Measurement} \label{sec: measuremet}
+\subsection{Measurement of the line splitting $\Delta \nu$} \label{sec: measuremet}
 The fundamental equation that predicts the angular position of the maxima in a Fabry-Perot interferometer is:
 \begin{equation}
     m = 2 \nu n d \cos{\theta} 
@@ -219,7 +239,7 @@ Numerical errors were considered, but they turn out to be insignificant: In equa
 \section{Results} \label{sec: results}
 
 \subsection{Cadmium red transition - normal Zeeman effect} \label{sec: Cd red}
-We first studied the $5^1 D_2\rightarrow 5^1 P_1$ transition for the cadmium red line. We used Table \ref{tab: quantum_numbers} and equation \eqref{eq: g eff} to find the possible values for the effective g-factor to be $g_{eff} = -1, 0, 1$. This means that we expected the line to split into 3 components, with the splitting given by equation \eqref{eq: splitting}. The theoretical value of the linear line splitting $\Delta \nu $ as function of magnetic field $B$ for $g_{eff} = \pm 1$ is: 
+We first studied the $5^1 D_2\rightarrow 5^1 P_1$ transition for the cadmium red line. We used the quantum numbers of the initial and final states (Table \ref{tab: quantum_numbers}) and equation \eqref{eq: g eff} to find the possible values for the effective g-factor $g_{eff} = -1, 0, 1$. This means that we expected the line to split into 3 components, with the splitting given by equation \eqref{eq: splitting}. The theoretical value of the linear line splitting $\Delta \nu $ as function of magnetic field $B$ for $g_{eff} = \pm 1$ is: 
 \begin{equation}
     \text{Theoretical value: } \frac{\Delta \nu}{B} = 46.7 \, \si{m^{-1}.T^{-1}}
 \end{equation}
@@ -228,7 +248,7 @@ We were able to observe that, as the magnetic field strength is increased, the m
     \text{Measured value: } \frac{\Delta \nu}{B} = 46.5 \pm 3.6 \, \si{m^{-1}.T^{-1}}
     \label{res: Cd red}
 \end{equation}
-\begin{figure}
+\begin{figure}[h]
     \centering
     \includegraphics[width=0.6\linewidth]{Cd red.png}
     \caption{Line splitting for the $\sigma$ polarised line due to the Zeeman effect in the cadmium red transition, $5^1 D_2\rightarrow 5^1 P_1$, $\lambda = 643.85\si{nm}$}
@@ -245,15 +265,25 @@ This is in agreement with the theoretical value \cite{CODATA2018}:
 \begin{equation}
     \frac{e}{m_e} = -1.75882001076(53) \times 10^{11} \si{C.kg^{-1}}
 \end{equation}
-Interestingly, it is also possible to determine the sign of the electron charge. We used a beetle as reference for left hand polarised light. The beetle reflects bright green left-hand polarised light. Therefore we determined that the outer ring in the interference pattern were LH polarised and the inner ones were RH polarised. These measurements were done with a longitudinal setup, parallel to the magnetic field. We used a compass to determine that the B-field vector was in the direction of the photon momentum. Outer ring is higher energy ($\Delta \nu > 0$), and $ \Delta m_J = 1$ corresponds to RH polarisation. By substitution into equation \eqref{eq: splitting}, this result confirms that electrons have negative charge. 
-\begin{figure}[h!]
+
+\begin{wrapfigure}{r}{0.4\textwidth}
     \centering
-    \includegraphics[width=0.5\linewidth]{polarisation.png}
-    \captionsetup{justification=centering}
-    \captionsetup{width=\linewidth}
-    \caption{Polarisation of the sigma lines. The outer line is RH polarised and the inner line is LH polarised}
+    \includegraphics[width=\linewidth]{polarisation.png}
+    \caption{Polarisation of the sigma lines. The outer fringe is RH polarised and the inner fringe is LH polarised}
     \label{fig: polarisation}
-\end{figure}
+\end{wrapfigure}
+
+Interestingly, it is also possible to determine the sign of the electron charge. We used a beetle as reference for left hand polarised light. The beetle reflects bright green left-hand polarised light. Therefore we determined that the outer ring in the interference pattern were LH polarised and the inner ones were RH polarised. These measurements were done with a longitudinal setup, parallel to the magnetic field. We used a compass to determine that the B-field vector was in the direction of the photon momentum. Outer ring is higher energy ($\Delta \nu > 0$), and $ \Delta m_J = 1$ corresponds to RH polarisation. By substitution into equation \eqref{eq: splitting}, this result confirms that electrons have negative charge. 
+%\begin{figure}[h!]
+%    \centering
+%    \includegraphics[width=0.4\linewidth]{polarisation.png}
+%    \captionsetup{justification=centering}
+%    \captionsetup{width=\linewidth}
+%    \caption{Polarisation of the sigma lines. The outer fringe is RH polarised and the inner fringe is LH polarised}
+%    \label{fig: polarisation}
+%\end{figure}
+
+
 
 \begin{figure}[h!]
     \centering
@@ -294,7 +324,7 @@ The $5^3 S_1\rightarrow 5^3 P_2$ transition, for the cadmium green line, exhibit
     \bottomrule
   \end{tabular}
     \captionsetup{justification=centering}
-  \caption{Cadmium green line: measured line splitting wavenumber $\Delta \nu$ dependence on magnetic field $B$ and $g_{eff}$ factor in the $5^3 S_1\rightarrow 5^3 P_2$ transition. The calculated values of \(g_{eff}\) are shown with the corresponding polarisation according to the Zeeman effect predictions}
+  \caption{Cadmium green line: measured line splitting wavenumber $\Delta \nu$ dependence on magnetic field $B$ and $g_{eff}$ factor in the $5^3 S_1\rightarrow 5^3 P_2$ transition. The values of \(g_{eff}\) are shown with the corresponding polarisation}
   \label{tab: Cd green g_eff}
 \end{table}
 This is indeed what we observed: when the magnetic field is applied, the line splits into 9 components. A polariser (or longitudinal observation) is used to select only the $\pi$ or $\sigma$ polarisations in order to more easily perform the measurements (see Fig. \ref{img: Cd_green_sigma_increasing_field} with only $\sigma$ polarisations). Our experiment verifies that the measured line splitting is the same in both longitudinal and perpendicular configurations. 
@@ -352,7 +382,7 @@ We directly measured the resolution of the Fabry-Perot setup by looking at the l
 \end{equation}
 When investigating the cadmium green line (Fig \ref{img: Cd_green_sigma_increasing_field}A) we achieved a better resolution of $\delta \nu_{\text{Cd}} = 10 \pm 2 \si{m^{-1}}$. This highlights how the setup is highly dependent on a good calibration. However, both of these values are a lot higher than the theoretically predicted resolution limit (equation \ref{eq: nu tot prediction}). Equation \eqref{eq: nu tot prediction} and \eqref{eq: splitting} predicted that we should be been able to measure splittings for with $g_{eff} = \pm 1$ at as low a field as $B = 0.08 \si{T}$. In practice we were only able to measure splittings for a minimum field of $B = 0.26 \si{T}$ for the cadmium red line (fig. \ref{fig: Cd red}). 
 
-We also attempted to measure the inherent instrumental resolution by making use of a He-Ne laser, which does not have Doppler broadening. The laser light line width was measured using a Czerny-Turner monochromator and determined to be $\lambda_{\text{He-Ne}} = 633.1 \pm 0.4 \si{nm}$. We measured the FWHM of the peaks in the line profile (Fig. \ref{img: He-Ne line profile}) of the Fabry-Perot interference image (Fig. \ref{img: He-Ne image}) and obtained a resolution limit of:
+We also attempted to measure the inherent instrumental resolution by making use of a He-Ne laser, with a much narrower line \cite{henelaser}. The laser light line width was measured using a Czerny-Turner monochromator and determined to be $\lambda_{\text{He-Ne}} = 633.1 \pm 0.4 \si{nm}$. We measured the FWHM of the peaks in the line profile (Fig. \ref{img: He-Ne line profile}) of the Fabry-Perot interference image (Fig. \ref{img: He-Ne image}) and obtained a resolution limit of:
 \begin{equation}
     \delta \nu_{\text{He-Ne no iris}} = 7.9 \pm 1 \si{m^{-1}}
 \end{equation}
@@ -360,7 +390,7 @@ without using an iris and with an iris:
 \begin{equation}
     \delta \nu_{\text{He-Ne with iris}} = 5.2 \pm 1 \si{m^{-1}}
 \end{equation}
-This suggests that the flatness \ref{item: flattness} of the mirror accounts for most of the error in our measurement. The low instrumental resolution will be dominant over the Doppler broadening (equation \eqref{eq: nu doppler}).
+This suggests that the flatness of the mirror (item \ref{item: flattness} from section \ref{sec: instr err}) accounts for most of the error in our measurement. The low instrumental resolution will be dominant over the Doppler broadening (equation \eqref{eq: nu doppler}).
 
 \section{Conclusions} \label{sec: conclusion}
 \subsection{Further work}
@@ -385,7 +415,7 @@ We derived the electron charge to mass ratio from the ratio of the splitting to 
 
 \appendix
 \section{Appendix - Energy levels and allowed transitions} \label{sec: theory derivation}
-In this experiment, we are investigating 4 transitions of cadmium and mercury. The states reached by these transitions are listed in table \ref{tab: quantum_numbers}, together with the quantum numbers corresponding to the state. These quantum numbers are used in calculating the splitting caused by the Zeeman interaction. 
+In this experiment, we are investigating 4 transitions of cadmium and mercury. The states reached by these transitions are listed in Table \ref{tab: quantum_numbers}, together with the quantum numbers corresponding to the state. These quantum numbers are used in calculating the splitting caused by the Zeeman interaction. 
 \begin{table}[h!]
     \centering
     \begin{tabular}{cccccc}
@@ -452,23 +482,7 @@ We cannot measure the magnetic field while having the lamp in position due to sp
 	b = 0.032 \pm 0.003  \text{ } \si{T} 
 \end{equation}
 
-\begin{figure}[h!]
-  \centering
-  \begin{subfigure}{0.48\linewidth}
-    \includegraphics[width=\linewidth]{IvsB full.png}
-    \caption{Full iron core}
-    \label{fig:IvsB full}
-  \end{subfigure}
-  \hfill
-  \begin{subfigure}{0.48\linewidth}
-    \includegraphics[width=\linewidth]{IvsB hollow.png}
-    \caption{Hollow iron core}
-    \label{fig:IvsB hollow}
-  \end{subfigure}
-  \captionsetup{justification=centering}
-  \caption{Conversion of the applied current to magnetic field.  The data was fitted with a linear fit ($y = a x + b$) using the method of least squares. Data points shown as central value $\pm$ variation of the field in the gap between the cores. Parameters of the best-fit are: \ref{fig:IvsB full}: $a = 0.312 \pm 0.004 $ \si{T.A^{-1}} and $ b = 0.013 \pm 0.002 $ \si{T} and \ref{fig:IvsB hollow}: $a = 0.472 \pm 0.004 $ \si{T.A^{-1}} and $ b = 0.032 \pm 0.003 $ \si{T}}
-  \label{fig:IvsB}
-\end{figure}
+
 
 \section{Appendix - User interface}
 The user interface used to make measurements is shown in figure \ref{fig: Cd red}. We used the circle tool to overlay circles on the interference maxima. The circle radius is measured in pixels and then converted to milimiters using the known size of pixels. 
@@ -481,8 +495,6 @@ The user interface used to make measurements is shown in figure \ref{fig: Cd red
     \label{fig: d measurement}
 \end{figure}
 
-\newpage
-%-------------------------------------------------------------------------------------------
 
 \section{Appendix - Splitting measurements}
 \subsection{Cadmium}
@@ -560,7 +572,6 @@ The mercury blue line only splits into 6 components: the central component is mi
     \label{tab: Hg blue sigma measurements}
 \end{table}
 
-\newpage
 \section{Appendix - Camera and Fabry-Perot images}
 All the images used for the data analysis and presented in the report are taken with the Basler acA1920-40um camera \footnote{https://docs.baslerweb.com/aca1920-40um} provided by the physics undergraduate practical labs, unless stated otherwise. This camera captures black and white images with 8 bit colour accuracy, resulting in 256 possible pixel brightness values. The camera has a full resolution of 1936 by 1216 pixels, but the custom practical labs software used in the practical labs only makes use of a section of the images of size 1200 by 1200. The images are exported in .png format, also at the 1200 by 1200 resolution. 
 
